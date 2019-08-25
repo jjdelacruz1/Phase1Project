@@ -1,4 +1,5 @@
-.container {
+.barContainer {
     color: red;
     background-color: aquamarine;
+    padding: 20px;
 }
