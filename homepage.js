@@ -22,10 +22,20 @@ window.addEventListener('DOMContentLoaded', function () {
 
     function createYelpResultsHtml (yelpSearchResults) {
         let businessHtml = yelpSearchResults.map(function (singleBusiness) {
-            return `<div class='card'></div><img class='card-image-top' style="width: 200px;" src='${singleBusiness.image_url}'>
-            <div class='body'>
-            <h5 class='card-title'>${singleBusiness.name}</h5>
-            </div>
+            return `          
+            <div class='card mb-3'>
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img class='card-img' src='${singleBusiness.image_url}'>
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body">
+                        <h3 class='card-title'>${singleBusiness.name}</h3>
+                        <p>${singleBusiness.location.display_address[0]}<br>${singleBusiness.location.display_address[2]}</p>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
             `
         })
         return businessHtml.join('')
