@@ -6,16 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="hompage.css">
 </head>
 <body>
-  <div class="row">
-    <div class="col-12">
-      <div class="container">
-        this is the container
+      <div class="row">
+        <div class="col-12 header text-center">
+          <h2 class="display-2">Happy Hour Finder!!!</h2>
+          <p>Search for great happy hours in your area!</p>
+        </div>
       </div>
-    </div>
-  </div>
+      <div class="row">
+        <div class="col-12">
+          <form id="search-form">
+              <div class="input-group input-group-lg">
+                <input class="form-control search-bar" id="search-bar" placeholder="City or Zip Code...">	
+                <button class="btn btn-primary input-group-btn" type="submit">Search</button>
+              </div>
+          </form>
+          </div>
+        </div>
+      <div class="barContainer">
+        <h1>Top Searches this week</h1>
+        <p>Here they are!</p>
+      </div>
   <script src="homepage.js"></script>
 </body>
 </html>
