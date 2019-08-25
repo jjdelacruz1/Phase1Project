@@ -1,4 +1,4 @@
-let ajaxResponse = null
+let ajaxResponse = null;
 
 window.addEventListener('DOMContentLoaded', function () {
     let searchTerm = 'sushi'
