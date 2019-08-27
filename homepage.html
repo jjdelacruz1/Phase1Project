@@ -7,6 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js'></script>
+  <link href='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
   <link rel="stylesheet" href="hompage.css">
 </head>
 <body>
@@ -26,10 +28,17 @@
           </form>
           </div>
         </div>
-      <div class="barContainer">
-        <h1>Top Searches this week</h1>
-        <p>Here they are!</p>
+      
+      <div class="results">
+          <div class="barContainer">
+              <h1>Top Searches this week</h1>
+              <p>Here they are!</p>
+            </div>
+            <div class="col-3">
+                <div id="map"></div>
+            </div>
       </div>
+      
   <script src="homepage.js"></script>
 </body>
 </html>

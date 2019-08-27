@@ -2,4 +2,30 @@
     color: red;
     background-color: aquamarine;
     padding: 20px;
+    width: 65vw;
+
+}
+
+.col-3 {
+    width: 28vw;
+    position: fixed;
+    left: 66%;
+    height: 100%;
+    padding: 15px;
+    border: solid 1px blue;
+}
+
+
+#map {
+     width:340px; 
+     height: 300px; 
+    }
+
+.results {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    padding: 20px;
+    border: solid 1px red;
 }
