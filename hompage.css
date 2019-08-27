@@ -2,3 +2,15 @@
     margin: 0;
     padding: 0;
 }
+.business-img {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    padding: 8px;
+}
+.card-title {
+    cursor: pointer;
+}
+#price-review {
+    cursor: default;
+}
