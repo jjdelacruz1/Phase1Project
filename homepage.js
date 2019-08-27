@@ -1,7 +1,7 @@
 let ajaxResponse = null;
 
 window.addEventListener('DOMContentLoaded', function () {
-    let searchTerm = 'sushi'
+    let searchTerm = 'taco'
     let zipCode = '77007'
     let yelpApiKey = 'Bearer fpfUJj8DFp_jm-n0LNi5U4WL9AgyD3G2ieoAPAYccY2QUi-1ZCXSuHoa0uEaPY60BInSS_COQHHlqWp0VeKDOcgdPBHn9lYSC1_r6mJCI3y8aU63IHNfK6Lhr3xhXXYx'
     let corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/'
@@ -11,13 +11,14 @@ window.addEventListener('DOMContentLoaded', function () {
         headers: {Authorization: `${yelpApiKey}`}
     }
     
+    // Performs ajax request to yelp api
     $.ajax(yelpAjaxRequest)
         .then(function (response) {
-            console.log('This is returned from the AJAX request: ',response)
+            // Retrieves business data and appends the data in rendered html format into the selected container
+            console.log(response)
             ajaxResponse = response.businesses
             let bodyContainer = document.querySelector('.container')
             bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
-            //console.log('This is saved into the empty array: ', ajaxResponse)
     });
 
     function createYelpResultsHtml (yelpSearchResults) {
@@ -95,4 +96,8 @@ window.addEventListener('DOMContentLoaded', function () {
     //     console.log(event.target)
     //     $('.card').addClass('shadow')
     // })
+
+    $(".card").on("click", function(ev){
+        console.log(ev.target)
+    })
 })
