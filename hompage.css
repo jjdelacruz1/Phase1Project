@@ -1,30 +1,31 @@
-.container {
+.barContainer {
     color: red;
     background-color: aquamarine;
-    /* border: solid 2px red; */
+    padding: 20px;
     width: 65vw;
 
 }
 
 .col-3 {
-    /* border: solid 2px red; */
     width: 28vw;
     position: fixed;
     left: 66%;
     height: 100%;
     padding: 15px;
+    border: solid 1px blue;
 }
 
 
 #map {
      width:340px; 
      height: 300px; 
-     border: solid 1px lightgrey;
     }
 
-.row {
+.results {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
+    padding: 20px;
+    border: solid 1px red;
 }
