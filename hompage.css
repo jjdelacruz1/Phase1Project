@@ -4,8 +4,8 @@ html, body {
 }
 
 .barContainer {
-    color: red;
-    background-color: aquamarine;
+    /* color: red;
+    background-color: aquamarine; */
     padding: 20px;
     width: 65vw;
 
@@ -42,4 +42,11 @@ html, body {
     position: relative;
     padding: 20px;
     border: solid 1px red;
+}
+
+.business-img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    padding: 8px;
 }

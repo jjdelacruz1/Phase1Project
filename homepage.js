@@ -6,26 +6,25 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('search-form').addEventListener('submit', function(e){
         e.preventDefault();
         var location = document.getElementById('search-bar').value
-
         var urlEncodedSearchString = encodeURIComponent(location)
         let yelpApiKey = 'Bearer fpfUJj8DFp_jm-n0LNi5U4WL9AgyD3G2ieoAPAYccY2QUi-1ZCXSuHoa0uEaPY60BInSS_COQHHlqWp0VeKDOcgdPBHn9lYSC1_r6mJCI3y8aU63IHNfK6Lhr3xhXXYx'
-    let corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/'
- 
+        let corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/'
 
-    var yelpAjaxRequest = {
+        var yelpAjaxRequest = {
         url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}`,
         headers: {Authorization: `${yelpApiKey}`}
-    }
-    
-    $.ajax(yelpAjaxRequest)
+        }
+
+        $.ajax(yelpAjaxRequest)
         .then(function (response) {
-            console.log('This is returned from the AJAX request: ',response)
+            let bodyContainer = document.querySelector('.barContainer')
+            bodyContainer.innerHTML = ''
+            //console.log('This is returned from the AJAX request: ',response)
             L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A';
             let viewCoordinate = response.businesses[0].coordinates;
             let map = L.mapbox.map('map')
             .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
             .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
-
             for (let i = 0; i < response.businesses.length; i++) {
                 let coordinate = response.businesses[i].coordinates;
                 let singleBusiness = response.businesses[i];
@@ -37,9 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             ${singleBusiness.location.display_address.join("<br>")}         
                         `);
                 }
-
             ajaxResponse = response.businesses
-            let bodyContainer = document.querySelector('.barContainer')
             bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
             //console.log('This is saved into the empty array: ', ajaxResponse)
     });
@@ -47,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function createYelpResultsHtml (yelpSearchResults) {
+    console.log('begin yelp func')
     let businessHtml = yelpSearchResults.map(function (singleBusiness) {
         // Renders out the star rating based on number rating from json data
         function renderStarRating () {
