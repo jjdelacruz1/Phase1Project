@@ -1,19 +1,33 @@
+html, body {
+    /* max-width: 100%;
+    overflow-x: hidden; */
+}
+
 .barContainer {
-    color: red;
-    background-color: aquamarine;
+    /* color: red;
+    background-color: aquamarine; */
     padding: 20px;
     width: 65vw;
 
 }
 
-.col-3 {
+.test {
+    /* position:-webkit-sticky; 
+    position:sticky; 
+    top:0; */
     width: 28vw;
-    position: fixed;
     left: 66%;
-    height: 100%;
+    top: 0;
+    /* height: 100%; */
     padding: 15px;
     border: solid 1px blue;
 }
+
+/* .test {
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:0;
+} */
 
 
 #map {
@@ -32,4 +46,11 @@
 
 .everything {
     filter: blur(13px);
+}
+
+.business-img {
+    width: 175px;
+    height: 175px;
+    object-fit: cover;
+    padding: 8px;
 }
