@@ -44,6 +44,10 @@ html, body {
     border: solid 1px red;
 }
 
+.everything {
+    filter: blur(13px);
+}
+
 .business-img {
     width: 175px;
     height: 175px;
