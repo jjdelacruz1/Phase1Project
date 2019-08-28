@@ -36,16 +36,14 @@
                       Please verify if you are over 21!
                   </div>
                   <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">I am under 21</button>
-                      <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">I am over 21!</button>
+                      <button type="button" class="btn btn-secondary mx-auto" id="notok" data-dismiss="modal">I am under 21</button>
+                      <button type="button" class="btn btn-secondary mx-auto" id="ok" data-dismiss="modal">I am over 21!</button>
                   </div>
               </div>
         </div>
   </div>
-  <div class="everything">
+  <div id="mainWrapper" class="blur">
       <div class="row">
-    
- 
         <div class="col-12 header text-center">
           <h2 class="display-2">Happy Hour Finder!!!</h2>
           <p>Search for great happy hours in your area!</p>
@@ -79,5 +77,6 @@
 
       
   <script src="homepage.js"></script>
+  <script src="buttonClick.js"></script>
 </body>
 </html>
