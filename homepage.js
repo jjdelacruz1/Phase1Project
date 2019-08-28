@@ -62,25 +62,25 @@ function createYelpResultsHtml (yelpSearchResults) {
         function renderStarRating () {
             let starRating = ''
             if (singleBusiness.rating === 5) {
-                starRating = '<img src="/img/regular_5.png">'
+                starRating = '<img src="img/regular_5.png">'
             } else if (singleBusiness.rating === 4.5) {
-                starRating = '<img src="/img/regular_4_half.png">'
+                starRating = '<img src="img/regular_4_half.png">'
             } else if (singleBusiness.rating === 4) {
-                starRating = '<img src="/img/regular_4.png">'
+                starRating = '<img src="img/regular_4.png">'
             } else if (singleBusiness.rating === 3.5) {
-                starRating = '<img src="/img/regular_3_half.png">'
+                starRating = '<img src="img/regular_3_half.png">'
             } else if (singleBusiness.rating === 3) {
-                starRating = '<img src="/img/regular_3.png">'
+                starRating = '<img src="img/regular_3.png">'
             } else if (singleBusiness.rating === 2.5) {
-                starRating = '<img src="/img/regular_2_half.png">'
+                starRating = '<img src="img/regular_2_half.png">'
             } else if (singleBusiness.rating === 2) {
-                starRating = '<img src="/img/regular_2.png">'
+                starRating = '<img src="img/regular_2.png">'
             } else if (singleBusiness.rating === 1.5) {
-                starRating = '<img src="/img/regular_1_half.png">'
+                starRating = '<img src="img/regular_1_half.png">'
             } else if (singleBusiness.rating === 1) {
-                starRating = '<img src="/img/regular_1.png">'
+                starRating = '<img src="img/regular_1.png">'
             } else {
-                starRating = '<img src="/img/regular_0.png">'
+                starRating = '<img src="img/regular_0.png">'
             }
             return starRating
         }
