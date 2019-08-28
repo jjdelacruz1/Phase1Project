@@ -29,3 +29,7 @@
     padding: 20px;
     border: solid 1px red;
 }
+
+.everything {
+    filter: blur(13px);
+}

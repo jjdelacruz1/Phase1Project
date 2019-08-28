@@ -5,13 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(window).on('load',function(){
+    var delayMs = 50; // delay in milliseconds
+
+    setTimeout(function(){
+        $('#myModal').modal('show');
+    }, delayMs);
+});    
+</script>
   <script src='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js'></script>
   <link href='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
   <link rel="stylesheet" href="hompage.css">
 </head>
 <body>
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h4 class="modal-title">Age Verification</h4>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      Please verify if you are over 21!
+                  </div>
+                  <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">I am under 21</button>
+                      <button type="button" class="btn btn-secondary mx-auto" data-dismiss="modal">I am over 21!</button>
+                  </div>
+              </div>
+        </div>
+  </div>
+  <div class="everything">
       <div class="row">
         <div class="col-12 header text-center">
           <h2 class="display-2">Happy Hour Finder!!!</h2>
@@ -38,6 +69,7 @@
                 <div id="map"></div>
             </div>
       </div>
+    </div>
       
   <script src="homepage.js"></script>
 </body>
