@@ -21,8 +21,9 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(function (response) {
             console.log('This is returned from the AJAX request: ',response)
             L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A';
+            let viewCoordinate = response.businesses[0].coordinates;
             let map = L.mapbox.map('map')
-            .setView([29.76328, -95.36327], 12)
+            .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
             .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
 
             for (let i = 0; i < response.businesses.length; i++) {
@@ -44,17 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     })
 })
-
-// function createYelpResultsHtml (yelpSearchResults) {
-//     let businessHtml = yelpSearchResults.map(function (singleBusiness) {
-//         return `<div class='card'></div><img class='card-image-top' style="width: 200px;" src='${singleBusiness.image_url}'>
-//         <div class='body'>
-//         <h5 class='card-title'>${singleBusiness.name}</h5>
-//         </div>
-//         `
-//     })
-//     return businessHtml.join('')
-// }
 
 function createYelpResultsHtml (yelpSearchResults) {
     let businessHtml = yelpSearchResults.map(function (singleBusiness) {
