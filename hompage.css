@@ -1,3 +1,8 @@
+html, body {
+    /* max-width: 100%;
+    overflow-x: hidden; */
+}
+
 .barContainer {
     color: red;
     background-color: aquamarine;
@@ -6,14 +11,23 @@
 
 }
 
-.col-3 {
+.test {
+    /* position:-webkit-sticky; 
+    position:sticky; 
+    top:0; */
     width: 28vw;
-    position: fixed;
     left: 66%;
-    height: 100%;
+    top: 0;
+    /* height: 100%; */
     padding: 15px;
     border: solid 1px blue;
 }
+
+/* .test {
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:0;
+} */
 
 
 #map {
