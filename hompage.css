@@ -1,26 +1,22 @@
 html, body {
-    /* max-width: 100%;
-    overflow-x: hidden; */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .barContainer {
     /* color: red;
     background-color: aquamarine; */
-    padding: 20px;
-    width: 65vw;
+    padding: 10px;
+    width: 57vw;
 
 }
 
 .test {
-    /* position:-webkit-sticky; 
-    position:sticky; 
-    top:0; */
-    width: 28vw;
-    left: 66%;
-    top: 0;
-    /* height: 100%; */
+    
+    width: 40vw;
+    left: 20%;
+    height: 100vh;
     padding: 15px;
-    border: solid 1px blue;
 }
 
 /* .test {
@@ -29,10 +25,18 @@ html, body {
     top:0;
 } */
 
+.header {
+    background-color: white;
+}
 
 #map {
-     width:340px; 
-     height: 300px; 
+    z-index: -3;
+    position: fixed;
+    right:12px;;
+    top:0;
+     width:500px; 
+     height: 100vh;
+
     }
 
 .results {
@@ -40,8 +44,7 @@ html, body {
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
-    padding: 20px;
-    border: solid 1px red;
+    padding: 5px;
 }
 
 .blur {
