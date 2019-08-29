@@ -1,5 +1,5 @@
 # Phase1Project
-
+[![Build Status](https://travis-ci.org/jjdelacruz1/Phase1Project.svg?branch=master)](https://travis-ci.org/jjdelacruz1/Phase1Project)
 Our Phase 1 Project is a site that will help users find the BEST happy hour near you!
 
 Our group is composed of Alvin Ng, Jerome Dela Cruz, and Sue Park.
