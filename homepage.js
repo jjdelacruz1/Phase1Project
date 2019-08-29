@@ -2,16 +2,20 @@ let ajaxResponse = null
 let searchTerm = 'happy hour'
 // let location = ''
 
+
 let map = L.mapbox.map('map');
 
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('search-form').addEventListener('submit', function(e){
         e.preventDefault();
+        // let mapContainer = document.createElement('div').setAttribute("id", "map");
+        // document.getElementsByClassName('test').appendChild(mapContainer);
+       
         var location = document.getElementById('search-bar').value
         var urlEncodedSearchString = encodeURIComponent(location)
         let yelpApiKey = 'Bearer fpfUJj8DFp_jm-n0LNi5U4WL9AgyD3G2ieoAPAYccY2QUi-1ZCXSuHoa0uEaPY60BInSS_COQHHlqWp0VeKDOcgdPBHn9lYSC1_r6mJCI3y8aU63IHNfK6Lhr3xhXXYx'
         let corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/'
-
+        
         var yelpAjaxRequest = {
         url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}`,
         headers: {Authorization: `${yelpApiKey}`}
@@ -32,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let singleBusiness = response.businesses[i];
                 L.marker([coordinate.latitude, coordinate.longitude], 
                     {title: singleBusiness.name}).addTo(map)
+                
                     .bindPopup(`
                             <div class="img"><img src="${singleBusiness.image_url}" height="50px"></div>
                             <h4>${singleBusiness.name}</h4>
