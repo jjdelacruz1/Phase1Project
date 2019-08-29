@@ -2,6 +2,8 @@ let ajaxResponse = null
 let searchTerm = 'happy hour'
 // let location = ''
 
+let map = L.mapbox.map('map');
+
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('search-form').addEventListener('submit', function(e){
         e.preventDefault();
@@ -22,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             //console.log('This is returned from the AJAX request: ',response)
             L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A';
             let viewCoordinate = response.businesses[0].coordinates;
-            let map = L.mapbox.map('map')
+            map
             .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
             .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
             for (let i = 0; i < response.businesses.length; i++) {
@@ -36,6 +38,10 @@ document.addEventListener('DOMContentLoaded', function () {
                             ${singleBusiness.location.display_address.join("<br>")}         
                         `);
                 }
+
+                
+               
+
             ajaxResponse = response.businesses
             bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
             //console.log('This is saved into the empty array: ', ajaxResponse)
@@ -45,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function createYelpResultsHtml (yelpSearchResults) {
     console.log('begin yelp func')
+    console.log(yelpSearchResults);
     let businessHtml = yelpSearchResults.map(function (singleBusiness) {
         // Renders out the star rating based on number rating from json data
         function renderStarRating () {
