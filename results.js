@@ -5,6 +5,7 @@ let searchTerm = 'happy hour'
 let map = L.mapbox.map('map');
 
 document.addEventListener('DOMContentLoaded', function () {
+        console.log(sessionStorage)
         let output = document.getElementById('output')
         let location = sessionStorage.getItem('location')
 
