@@ -1,16 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+html body {
+    margin: 0;
+    padding: 0;
+}
+
 #map {
     top: 70px;
     margin-bottom: 70px;
 }
 
 #logo {
-    padding-right: 30px;
+    padding-right: 40px;
+    padding-left: 10px;
 }
 
 #navigation {
     position: fixed;
     z-index: 2000;
-    background-color: lightblue;
+    background-color: #262626;
     height: 70px;
     width: 100%; 
     padding: 10px 0 10px 10px;
@@ -23,11 +33,35 @@
 
 #search-form {
     width: 60%;
+    border: none;
 }
 
-.btn-primary {
-    background-color: grey;
-    padding-top: 12px;
+#submit-btn {
+    background-color: #fc890d;
+    color: white;
     border: none;
-    width: 90px;
+    width: 70px;
 }
+
+.form-control {
+    border: 0;
+}
+
+footer {
+    padding-top:12px;
+    text-align: center;
+    color: white;
+    background-color: #262626;
+    height: 50px;
+    width: 100%; 
+    margin-bottom: 0;
+}
+
+#coffee {
+    padding-bottom: 4px;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
