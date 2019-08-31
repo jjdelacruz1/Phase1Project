@@ -6,6 +6,7 @@ const map = L.mapbox.map('map')
 
 let markersArray = [];
 
+
 document.addEventListener('DOMContentLoaded', function () {
   
   console.log(sessionStorage)
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
     url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}`,
     headers: { Authorization: `${yelpApiKey}` }
   }
+
 
 
   function deleteMarkers() {
@@ -36,8 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
       L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A'
       const viewCoordinate = response.businesses[0].coordinates
       map
-        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 14)
+        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'))
+
       for (let i = 0; i < response.businesses.length; i++) {
         const coordinate = response.businesses[i].coordinates
         const singleBusiness = response.businesses[i]
@@ -50,6 +53,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         `)
         markersArray.push(marker);
         map.scrollWheelZoom.disable()
+
+        
+        // setTimeout(function(){ console.log('wuts thisss', markersArray.length); }, 3000);
+        // console.log('This is markersarray', markersArray)
       } 
 
       
@@ -57,9 +64,27 @@ document.addEventListener('DOMContentLoaded', function () {
       ajaxResponse = response.businesses
       output.innerHTML = createYelpResultsHtml(ajaxResponse)
       sessionStorage.clear()
-      console.log(markersArray)
 
-      // deleteMarkers()
+      deleteMarkers()
+
+      // for (let i = 0; i < response.businesses.length; i++) {
+      //   const coordinate = response.businesses[i].coordinates
+      //   const singleBusiness = response.businesses[i]
+      //   const marker = L.marker([coordinate.latitude, coordinate.longitude],
+      //     { title: singleBusiness.name }).addTo(map)
+      //     .bindPopup(`
+      //                       <div class="img"><img src="${singleBusiness.image_url}" height="50px"></div>
+      //                       <h4>${singleBusiness.name}</h4>
+      //                       ${singleBusiness.location.display_address.join('<br>')}         
+      //                   `)
+      //   markersArray.push(marker);
+      //   map.scrollWheelZoom.disable()
+
+        
+      //   setTimeout(function(){ console.log('wuts thisss', markersArray.length); }, 3000);
+      //   console.log('This is markersarray', markersArray)
+      // } 
+
     })
 })
 
