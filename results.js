@@ -4,7 +4,10 @@ const searchTerm = 'happy hour'
 
 const map = L.mapbox.map('map')
 
+let markersArray = [];
+
 document.addEventListener('DOMContentLoaded', function () {
+  
   console.log(sessionStorage)
   const output = document.getElementById('output')
   const location = sessionStorage.getItem('location')
@@ -15,6 +18,19 @@ document.addEventListener('DOMContentLoaded', function () {
     url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}`,
     headers: { Authorization: `${yelpApiKey}` }
   }
+
+
+  
+
+  function deleteMarkers() {
+    if (markersArray.length !== 0) {
+      markersArray.forEach(function(marker) {
+        marker.remove()
+      });
+    }
+  }
+
+  deleteMarkers()
 
   $.ajax(yelpAjaxRequest)
     .then(function (response) {
@@ -27,17 +43,20 @@ document.addEventListener('DOMContentLoaded', function () {
       for (let i = 0; i < response.businesses.length; i++) {
         const coordinate = response.businesses[i].coordinates
         const singleBusiness = response.businesses[i]
-        L.marker([coordinate.latitude, coordinate.longitude],
+        const marker = L.marker([coordinate.latitude, coordinate.longitude],
           { title: singleBusiness.name }).addTo(map)
           .bindPopup(`
                             <div class="img"><img src="${singleBusiness.image_url}" height="50px"></div>
                             <h4>${singleBusiness.name}</h4>
                             ${singleBusiness.location.display_address.join('<br>')}         
                         `)
+        markersArray.push(marker);
       }
       ajaxResponse = response.businesses
       output.innerHTML = createYelpResultsHtml(ajaxResponse)
       sessionStorage.clear()
+      console.log(markersArray)
+      // deleteMarkers()
     })
 })
 

@@ -20,7 +20,6 @@ html, body {
     top: 0;
     /* height: 100%; */
     padding: 15px;
-    border: solid 1px blue;
 }
 
 /* .test {
@@ -41,7 +40,6 @@ html, body {
     flex-direction: row;
     position: relative;
     padding: 20px;
-    border: solid 1px red;
 }
 
 .blur {
