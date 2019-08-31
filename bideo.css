@@ -1,0 +1,18 @@
+* {
+    margin: 0; padding: 0;
+  }
+   
+  #bideo {
+    overflow: hidden;
+    height: 400px;
+    background: #edeae8;
+    position: relative;
+  }
+   
+  video {
+    position: absolute;
+     
+    /* Vertical and Horizontal center*/
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+  }
