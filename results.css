@@ -73,3 +73,10 @@ footer {
  #output {
      padding-top: 15px;
  }
+
+ .bckgrnd-img {
+     background-image: url('/img/kelsey-chance-tAH2cA_BL5g-unsplash.jpg');
+     background-size: contain;
+     background-repeat: none;
+     background-attachment: fixed;
+ }
