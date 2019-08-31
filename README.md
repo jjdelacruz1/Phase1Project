@@ -5,14 +5,14 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-- [General Information & Project Goals](https://github.com/jjdelacruz1/Phase1Projec#General-Information-&-Project-Goals)
-- [Setup]
-- [Technologies Used]
-- [Features]
-- [Our Process]
-- [Status]
-- [What We Learned]
-- [Team]
+- [General Information & Project Goals](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#general-information--project-goals)
+- [Setup](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#setup)
+- [Technologies Used](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#technologies-used)
+- [Features](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#features)
+- [Our Process](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-process)
+- [Status](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#status)
+- [What We Learned](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#what-we-learned)
+- [Team](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-team)
 
 ## General Information & Project Goals
 
