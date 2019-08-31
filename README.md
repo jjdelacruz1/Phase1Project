@@ -52,7 +52,7 @@ Clone repository and open homepage.html
 
 ## What We Learned
 
-- Breaking up our code into different files/modules so that they're easier to reuse as well decreasing merge conflicts
+- Breaking up our code into different files/modules so that they're easier to reuse as well helping to decrease the chance of merge conflicts
 - Integrating APIs that require authentication
 
 ## Our Team
