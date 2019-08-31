@@ -7,6 +7,7 @@ const map = L.mapbox.map('map')
 let markersArray = [];
 
 document.addEventListener('DOMContentLoaded', function () {
+  
   console.log(sessionStorage)
   const output = document.getElementById('output')
   const location = sessionStorage.getItem('location')
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}`,
     headers: { Authorization: `${yelpApiKey}` }
   }
+
 
   
 
