@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A'
       const viewCoordinate = response.businesses[0].coordinates
       map
-        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
+        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 14)
         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'))
       for (let i = 0; i < response.businesses.length; i++) {
         const coordinate = response.businesses[i].coordinates
@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
       output.innerHTML = createYelpResultsHtml(ajaxResponse)
       sessionStorage.clear()
       console.log(markersArray)
+
       // deleteMarkers()
     })
 })
