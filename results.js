@@ -103,8 +103,8 @@ function createYelpResultsHtml (yelpSearchResults) {
       return priceRange
     }
     // Returns the html for each business
-    return `          
-        <div id='card' class='card mb-3'>
+    return `         
+        <div id='card' class='card mb-3 d-md-flex flex-md-equal w-100 my-md-3 pl-md-3'>
             <div class="row no-gutters">
                 <div class="col-md-3">
                     <a href="${singleBusiness.url}"><img class='business-img card-img rounded' src='${singleBusiness.image_url}'></a>

@@ -7,6 +7,9 @@ button.addEventListener('click', function () {
 
 var button2 = document.getElementById('notok')
 
+
+var joke = 'https://api.chucknorris.io/jokes/random'
+console.log(joke.value)
 button2.addEventListener('click', function () {
   wrapper.innerHTML = '<h1>You are not old enough!</h1><p>Testing out another line</p>'
   wrapper.classList.toggle('blur')
