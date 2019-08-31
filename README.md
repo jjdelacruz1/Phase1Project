@@ -5,7 +5,7 @@
 
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-- [General Information & Project Goals](https://github.com/jjdelacruz1/Phase1Projec#General Information & Project Goals)
+- [General Information & Project Goals](https://github.com/jjdelacruz1/Phase1Projec#General-Information-&-Project-Goals)
 - [Setup]
 - [Technologies Used]
 - [Features]
