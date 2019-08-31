@@ -7,19 +7,27 @@ button.addEventListener('click', function () {
 
 var button2 = document.getElementById('notok')
 
-button2.addEventListener('click', function () {
-  wrapper.innerHTML = `<h1>You are not old enough!</h1>
-                        <h2>Please get older and enjoy this joke!</h2>
-                        <h3>Random Chuck Norris Joke:</h3>
-                        <p></p>`
-  wrapper.classList.toggle('blur')
-})
 
-$.ajax({
+
+var randomJoke = $.ajax({
   jsonp: false,
   url: "http://api.icndb.com/jokes/random",
   success: function(data) {
     var joke = data.value.joke;
     console.log(joke)
+    return joke
   }
-});
+})
+.then(function(response){
+  console.log(response.value.joke)
+  var joke = response.value.joke
+  return joke
+})
+.then(button2.addEventListener('click', function (event) {
+  wrapper.innerHTML = `<h1>You are not old enough!</h1>
+                        <h2>Please get older and enjoy this joke!</h2>
+                        <h3>Random Chuck Norris Joke:</h3>
+                        <p>${event}</p>`
+  wrapper.classList.toggle('blur')
+}))
+
