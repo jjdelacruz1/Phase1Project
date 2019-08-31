@@ -33,13 +33,14 @@ Clone repository and open homepage.html
 - Bootstrap 4
 - Mapbox and Yelp APIs
 - HTML & CSS
+- Travis CI 
 - Bideo.js
 
 ## Features
 
 - Working search feature
 - Results page that renders results from Yelp's API
-- Interactive map with markers that reflect the information from the search results
+- Interactive map from Mapbox that include markers that reflect the information from the search results
 
 ## Our Process
 
