@@ -22,7 +22,7 @@
     // of different video formats to add
     src: [
       {
-        src: 'night.mp4',
+        src: 'http://www.anstudio.co/wp-content/uploads/2019/08/Beer-24916.mp4',
         type: 'video/mp4'
       },
       {
@@ -32,8 +32,8 @@
     ],
 
     // What to do once video loads (initial frame)
-    onLoad: function () {
-      document.querySelector('#video_cover').style.display = 'none';
-    }
+    // onLoad: function () {
+    //   document.querySelector('#video_cover').style.display = 'none';
+    // }
   });
 }());
