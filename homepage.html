@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>H-Town Happy Hour</title>
+  <title>Happy Hour Finder</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,9 +18,12 @@
 });    
 </script>
   <script src='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js'></script>
+  <script src="https://kit.fontawesome.com/2c794c18ec.js"></script>
   <link href='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
   <link rel="stylesheet" href="hompage.css">
-  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="results.css">
+  <link rel="stylesheet" href="bideo.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -44,41 +47,54 @@
               </div>
         </div>
   </div>
+  <!-- Start of homepage design -->
   <div id="mainWrapper" class="blur">
-      <div class="row">
-        <div class="col-12 header text-center">
-          <h2 class="display-2">Happy Hour Finder!!!</h2>
-          <p>Search for great happy hours in your area!</p>
-        </div>
-       
+      <!-- Header -->
+      <div id="navigation">
+          <a href="homepage.html"><img id="logo" src="img/logo.png" height="50px"></a>
       </div>
-      <div class="row">
-        <div class="col-12 search-container">
-          <form id="search-form">
-              <div class="input-group input-group-lg">
-                <input class="form-control search-bar rounded-0" id="search-bar" placeholder="City or Zip Code..." style="height:60px">	
-                <a class="btn btn-primary" href="results.html" role="button"><img src="img/search-icon.svg" height="30px"></a>
-              </div>
-          </form>
-          </div>
+      <div id="homepage-content">
+      <!-- Search bar -->
+      <div id="homepage-search" class="row">
+        <!-- Text -->
+        <div class="col-12">
+          <h1 id="primary-text">It's about that time of day.</h1>
+          <p id="secondary-text">Explore the best bars around your area.</p>
         </div>
-      <div class="results">
-          <div class="barContainer">
-            <h1>Top Searches this week</h1>
-            <p>Here they are!</p>
-          </div>
-          <!-- <div class="sticky-top test">
-              testtt
-            </div>  
-  -->
-            <div class="sticky-top test">
-              <div id="map"></div>
+          <div class="col-12 search-container">
+            <form id="search-form">
+                <div class="input-group input-group-lg">
+                  <input class="form-control search-bar rounded-0" id="search-bar" placeholder="Search by city or zip" style="height:60px">	
+                  <a class="btn btn-primary" href="results.html" role="button"><img src="img/search-icon.svg" height="30px"></a>
+                </div>
+            </form>
             </div>
+        </div>
+      <!-- Background video -->
+      <div id="bideo">
+        <video id="background-video" autoplay muted loop><source src="http://www.anstudio.co/wp-content/uploads/2019/08/Beer-24916.mp4" type="video/mp4"></video>
+        <!-- <div id="video_cover"></div> -->
+        <div id="overlay"></div>
+        <div id="video_controls">
+            <span id="play">
+              <img src="/img/play.png">
+            </span>
+            <span id="pause">
+              <img src="/img/pause.png">
+            </span>
+        </div>
       </div>
-    </div>
-
-      
+      </div>
+        <!-- Footer content -->
+        <div id="footer-content">
+            <a href="https://github.com/jjdelacruz1/Phase1Project" target="blank" style="display: inline-block;"><p><i class="fab fa-github"></i>View Github</p></a>
+            <p style="display: inline-block;">|</p>
+            <p style="display: inline-block;">Powered by <a href="https://www.yelp.com/fusion" target="blank">Yelp</a> & <a href="https://docs.mapbox.com/api/" target="blank">Mapbox</a></p>
+        </div>
+  </div>
   <script src="homepage.js"></script>
+  <script src="main.js"></script>
+  <script src="bideo.js"></script>
   <script src="buttonClick.js"></script>
 </body>
 </html>
