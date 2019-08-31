@@ -103,7 +103,8 @@ function createYelpResultsHtml (yelpSearchResults) {
       return priceRange
     }
     // Returns the html for each business
-    return `          
+    return `     
+      <div class="container p-5">     
         <div id='card' class='card mb-3'>
             <div class="row no-gutters">
                 <div class="col-md-3">
@@ -118,6 +119,7 @@ function createYelpResultsHtml (yelpSearchResults) {
                 </div>
             </div>
         </div>
+      </div>
         `
   })
   return businessHtml.join('')
