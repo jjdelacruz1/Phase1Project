@@ -37,7 +37,9 @@ Clone repository and open homepage.html
 
 ## Features
 
-- Working search
+- Working search feature
+- Results page that renders results from Yelp's API
+- Interactive map with markers that reflect the information from the search results
 
 ## Our Process
 
