@@ -65,3 +65,11 @@ footer {
     outline: none !important;
     box-shadow: none;
  }
+
+ .card {
+     width: 45%;
+ }
+
+ #output {
+     padding-top: 15px;
+ }
