@@ -1,6 +1,7 @@
 html, body {
     /* max-width: 100%;
     overflow-x: hidden; */
+    box-sizing: border-box
 }
 
 .barContainer {
@@ -34,12 +35,41 @@ html, body {
      height: 300px; 
     }
 
+.search-container {
+    display: flex;
+    justify-content: center;
+}
+
 .results {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     position: relative;
     padding: 20px;
+}
+
+#search-form {
+    width: 60%;
+    border: none;
+    height: 50px !important;
+}
+
+#search-icon {
+    padding-top: 10px;
+}
+
+.btn-primary {
+    background-color: #f9c00b;
+    color: white;
+    border-radius: 0;
+    border: none;
+    width: 70px;
+    padding-top: 16px;
+}
+
+input[type="text"]:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 .blur {
