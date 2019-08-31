@@ -1,0 +1,33 @@
+#map {
+    top: 70px;
+    margin-bottom: 70px;
+}
+
+#logo {
+    padding-right: 30px;
+}
+
+#navigation {
+    position: fixed;
+    z-index: 2000;
+    background-color: lightblue;
+    height: 70px;
+    width: 100%; 
+    padding: 10px 0 10px 10px;
+    text-align: left;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#search-form {
+    width: 60%;
+}
+
+.btn-primary {
+    background-color: grey;
+    padding-top: 12px;
+    border: none;
+    width: 90px;
+}
