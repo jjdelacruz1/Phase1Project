@@ -16,7 +16,7 @@
 
 ## General Information & Project Goals
 
-For our phase one project, we decided to build a simple web application as a team of three, called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city.
+For our phase one project, we decided to build a simple web application as a team of three, called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
 
 **Project Goals**
 - Integrate two remote APIs using AJAX
