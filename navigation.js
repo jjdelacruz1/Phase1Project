@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const viewCoordinate = response.businesses[0].coordinates
         map
           .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
-          .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'))
+          .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
 
 
         for (let i = 0; i < response.businesses.length; i++) {
@@ -45,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             ${singleBusiness.location.display_address.join('<br>')}         
                         `)
 
+                        marker.on('mouseover', function (e) {
+                            this.openPopup();
+                          });
+                          marker.on('mouseout', function (e) {
+                            this.closePopup();
+                          });
         //   markers.push(singleMarker)
         }
 

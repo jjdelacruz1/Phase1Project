@@ -68,15 +68,23 @@ footer {
 
  .card {
      width: 45%;
+     opacity: .95;
+     -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
  }
 
  #output {
      padding-top: 15px;
  }
 
+ a.leaflet-popup-close-button {
+     display: none;
+ }
+
  .bckgrnd-img {
-     background-image: url('img/kelsey-chance-tAH2cA_BL5g-unsplash.jpg');
-     background-size: contain;
+     background-image: url('img/results-img2.jpg');
+     background-size: cover;
      background-repeat: none;
      background-attachment: fixed;
  }
