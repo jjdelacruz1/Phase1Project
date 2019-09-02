@@ -67,11 +67,6 @@ html, body {
     padding-top: 16px;
 }
 
-input[type="text"]:focus {
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
 .blur {
     filter: blur(13px);
 }
