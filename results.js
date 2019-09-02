@@ -42,18 +42,23 @@ document.addEventListener('DOMContentLoaded', function () {
         const coordinate = response.businesses[i].coordinates
         const singleBusiness = response.businesses[i]
         const marker = L.marker([coordinate.latitude, coordinate.longitude],
-          { title: singleBusiness.name }).addTo(map)
+          { title: singleBusiness.name}).addTo(map)
           .bindPopup(`
                             <div class="img"><img src="${singleBusiness.image_url}" height="50px"></div>
                             <h4>${singleBusiness.name}</h4>
                             ${singleBusiness.location.display_address.join('<br>')}         
                         `)
-
+                        marker.on('mouseover', function (e) {
+                          this.openPopup();
+                        });
+                        marker.on('mouseout', function (e) {
+                          this.closePopup();
+                        });
         markersArray.push(marker);
         map.scrollWheelZoom.disable()
       } 
 
-      
+     
 
       ajaxResponse = response.businesses
       output.innerHTML = createYelpResultsHtml(ajaxResponse)

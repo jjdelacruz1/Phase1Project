@@ -45,6 +45,12 @@ document.addEventListener('DOMContentLoaded', function () {
                             ${singleBusiness.location.display_address.join('<br>')}         
                         `)
 
+                        marker.on('mouseover', function (e) {
+                            this.openPopup();
+                          });
+                          marker.on('mouseout', function (e) {
+                            this.closePopup();
+                          });
         //   markers.push(singleMarker)
         }
 

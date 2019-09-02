@@ -78,6 +78,10 @@ footer {
      padding-top: 15px;
  }
 
+ a.leaflet-popup-close-button {
+     display: none;
+ }
+
  .bckgrnd-img {
      background-image: url('img/results-img2.jpg');
      background-size: cover;
