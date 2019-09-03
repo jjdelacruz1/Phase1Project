@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A'
       const viewCoordinate = response.businesses[0].coordinates
       map
-        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 11)
+        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 12)
         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
       for (let i = 0; i < response.businesses.length; i++) {
         const coordinate = response.businesses[i].coordinates
@@ -122,7 +122,8 @@ function createYelpResultsHtml (yelpSearchResults) {
                     <div class="card-body">
                         <a href="${singleBusiness.url}"><h5 class='card-title'>${singleBusiness.name}</h5></a>
                         <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews</p>
-                        <p>${singleBusiness.location.display_address[0]}<br>${singleBusiness.location.display_address[2]}</p>
+                        <p>${singleBusiness.location.display_address[0]}<br>${singleBusiness.location.display_address[1]}</p>
+                        <p>More nonsense</p>
                     </div>
                 </div>
             </div>
