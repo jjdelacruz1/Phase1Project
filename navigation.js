@@ -1,6 +1,6 @@
 // let ajaxResponse = null
 // const searchTerm = 'happy hour'
-console.log('fuuuuuuuuu')
+//console.log('fuuuuuuuuu')
 // let location = ''
 
 // const map = L.mapbox.map('map')
@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let form = e.target;
     let formValue = form[0].value
     console.log('search value',form)
-    var urlEncodedSearchString = encodeURIComponent(formValue)
+    //var urlEncodedSearchString = encodeURIComponent(formValue)
     const yelpApiKey = 'Bearer fpfUJj8DFp_jm-n0LNi5U4WL9AgyD3G2ieoAPAYccY2QUi-1ZCXSuHoa0uEaPY60BInSS_COQHHlqWp0VeKDOcgdPBHn9lYSC1_r6mJCI3y8aU63IHNfK6Lhr3xhXXYx'
     const corsAnywhereUrl = 'https://cors-anywhere.herokuapp.com/'
 
     var yelpAjaxRequest = {
-      url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}`,
+      url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&limit=10`,
       headers: { Authorization: `${yelpApiKey}` }
     }
 
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function createYelpResultsHtml (yelpSearchResults) {
-  console.log('begin yelp func')
+  //console.log('begin yelp func')
   console.log(yelpSearchResults);
   const businessHtml = yelpSearchResults.map(function (singleBusiness) {
     // Renders out the star rating based on number rating from json data
