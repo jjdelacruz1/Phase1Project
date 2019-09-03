@@ -51,9 +51,25 @@
   <!-- Start of homepage design -->
   <div id="mainWrapper" class="blur">
       <!-- Header -->
-      <div id="navigation">
+      <nav class="navbar navbar-expand-lg navbar-dark" style="display: flex; justify-content: space-between;">
           <a href="homepage.html"><img id="logo" src="img/logo.png" height="50px"></a>
-      </div>
+    
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="display: flex; justify-content: flex-end;">
+
+              <ul class="navbar-nav" class="nav-item">
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">About Our Project<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+
+            </div>
+      
+      </nav>
+
       <div id="homepage-content">
       <!-- Search bar -->
       <div id="homepage-search" class="row">

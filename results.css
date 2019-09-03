@@ -2,6 +2,14 @@
     box-sizing: border-box;
 }
 
+@media screen and (min-width: 375px) {
+    #search-form {
+       width: 30%;
+    }
+    #submit-btn {
+       width: 50px !important;
+   }   
+
 html body {
     margin: 0;
     padding: 0;
@@ -17,10 +25,11 @@ html body {
     padding-left: 10px;
 }
 
-#navigation {
+.navbar {
+    color: white !important;
     position: fixed;
     z-index: 2000;
-    background-color: #262626;
+    background-color: #262626 !important;
     height: 70px;
     width: 100%; 
     padding: 10px 0 10px 10px;
@@ -31,9 +40,18 @@ html body {
     flex-wrap: wrap;
 }
 
-#search-form {
-    width: 60%;
+#search-bar {
+    border: solid red 1px;
+    width: 70%;
     border: none;
+    border-radius: 0;
+    height: 45px;
+    margin-right: 0 !important;
+    margin-left: 10px;
+}
+
+#search-form {
+    width: 70%;
 }
 
 #submit-btn {
@@ -41,6 +59,24 @@ html body {
     color: white;
     border: none;
     width: 70px;
+    height: 45px;
+}
+
+.nav-item {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+a:hover {
+    color: #f9c00b !important;
+  }
+
+  #navbarSupportedContent {
+    background-color: #262626;
 }
 
 .form-control {
