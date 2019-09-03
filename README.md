@@ -12,7 +12,7 @@
 - [Features](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#features)
 - [Our Process](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-process)
 - [Status](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#status)
-- [What We Learned](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#what-we-learned)
+- [What We Learned & Challenges](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#what-we-learned)
 - [Team](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-team)
 
 ## General Information & Project Goals
@@ -57,6 +57,12 @@ which deploys the application to Surge.
 
 - Breaking up our code into different files/modules so that they're easier to reuse as well helping to decrease the chance of merge conflicts
 - Integrating APIs that require authentication
+
+**Challenges We Came Across**
+
+Many of the challenges we encountered pertained to the app's search feature such as:
+- Figuring out how to make the search results appear on an actual 'results' page
+- Looking into why the search wasn't working on the results page, while it works fine on the homepage
 
 ## Our Team
 
