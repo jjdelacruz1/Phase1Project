@@ -122,7 +122,8 @@ function createYelpResultsHtml (yelpSearchResults) {
                     <div class="card-body">
                         <a href="${singleBusiness.url}"><h5 class='card-title'>${singleBusiness.name}</h5></a>
                         <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews</p>
-                        <p>${singleBusiness.location.display_address[0]}<br>${singleBusiness.location.display_address[2]}</p>
+                        <p>${singleBusiness.location.display_address[0]}<br>${singleBusiness.location.display_address[1]}</p>
+                        <p>More nonsense</p>
                     </div>
                 </div>
             </div>
