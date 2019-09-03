@@ -7,7 +7,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 - [General Information & Project Goals](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#general-information--project-goals)
-- [Setup](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#setup)
+- [Available Scripts](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#available-scripts)
 - [Technologies Used](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#technologies-used)
 - [Features](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#features)
 - [Our Process](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-process)
@@ -25,9 +25,11 @@ For our phase one project, we decided to build a simple web application as a tea
 - Deploy our project elsewhere besides Github pages
 - Learn how to break code into different files or modules
 
-## Setup
+## Available Scripts
 
-Clone repository and open homepage.html
+In the project directory, you can run:
+`npm run deploy`
+which deploys the application to Surge. 
 
 ## Technologies Used
 
