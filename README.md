@@ -27,24 +27,28 @@ For our phase one project, we decided to build a simple web application as a tea
 
 In the project directory, you can run:
 `npm run deploy`
-which deploys the application to Surge. 
+in your terminal which deploys the application to Surge. 
+
+## Languages Used
+- HTML, CSS & JavaScript
 
 ## Technologies Used
 
-- HTML, CSS & JavaScript
-- [jQuery](https://jquery.com/)
-- [Bootstrap](https://getbootstrap.com/)
-- [Mapbox](https://docs.mapbox.com/api/)
-- [Yelp Fusion](https://www.yelp.com/fusion)
-- [Travis CI](https://travis-ci.org/)
-- [Bideo](https://rishabhp.github.io/bideo.js/)
-- [Random Chuck Norris](https://api.chucknorris.io/)
+| Name | Description |
+| --- | --- |
+| [jQuery](https://jquery.com/) | JS library that simplifies HTML DOM tree traversal and manipulation, event handling, CSS animation, and AJAX |
+| [Bootstrap](https://getbootstrap.com/) | CSS framework template for typography, forms, buttons, navigation and other interface components |
+| [Mapbox](https://docs.mapbox.com/api/) | xxx |
+| [Yelp Fusion](https://www.yelp.com/fusion) | xxx |
+| [Travis CI](https://travis-ci.org/) | xxx |
+| [Bideo](https://rishabhp.github.io/bideo.js/) | xxx |
+| [Random Chuck Norris](https://api.chucknorris.io/) | xxx |
 
 ## Features
 
 - Search for happy hours by city or zip
-- Browse through top results
-- Interactive map that marks the location for each result
+- Browse through top happy hour results
+- Swipe through interactive map that marks the location for each result
 - Easter egg if you are under 21 :wink:
 
 ## Our Process
@@ -67,10 +71,20 @@ which deploys the application to Surge.
 **Challenges We Came Across**
 
 Many of the challenges we encountered pertained to the app's search feature such as:
-- Figuring out how to make the search results appear on an actual 'results' page
+- Saving the user's search term on one page and rendering the results on another
 - Looking into why the search wasn't working on the results page, while it works fine on the homepage
 - Assign the submit button to the user's enter key
-- 
+- Lock in 'happy hour' parameter
+
+Mapbox:
+- Returning to cleared state for map markers
+- Removing default behaviors like zooming on scroll
+- Map markers reactive to mouse hovers
+
+Yelp:
+- Ignoring undefined values from JSON data
+- Offseting results to apply next/previous page
+- Pinpointing which business values we need to render
 
 ## Our Team
 
