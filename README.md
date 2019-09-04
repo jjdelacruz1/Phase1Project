@@ -36,13 +36,13 @@ in your terminal which deploys the application to Surge.
 
 | Name | Description |
 | --- | --- |
-| [jQuery](https://jquery.com/) | JS library that simplifies HTML DOM tree traversal and manipulation, event handling, CSS animation, and AJAX |
-| [Bootstrap](https://getbootstrap.com/) | CSS framework template for typography, forms, buttons, navigation and other interface components |
-| [Mapbox](https://docs.mapbox.com/api/) | Live location |
-| [Yelp Fusion](https://www.yelp.com/fusion) | xxx |
-| [Travis CI](https://travis-ci.org/) | Sync Github projects to continually test and deploy your projects |
-| [Bideo](https://rishabhp.github.io/bideo.js/) | JS library for responsive background video |
-| [Random Chuck Norris](https://api.chucknorris.io/) | API for generating random Chuck Norris jokes |
+| [jQuery](https://jquery.com/) | Simplifies DOM tree traversal and manipulation, event handling, CSS animation, and AJAX |
+| [Bootstrap](https://getbootstrap.com/) | Framework for typography, forms, buttons, navigation and other interface components |
+| [Mapbox](https://docs.mapbox.com/api/) | Extensible mapping platform for customizable maps, location search and live location data |
+| [Yelp Fusion](https://www.yelp.com/fusion) | Utilize Yelp's database of business data, content and information |
+| [Travis CI](https://travis-ci.org/) | Sync Github projects to continually test and deploy projects |
+| [Bideo](https://rishabhp.github.io/bideo.js/) | Responsive background video |
+| [Random Chuck Norris](https://api.chucknorris.io/) | Generate random Chuck Norris jokes |
 
 ## Features
 
