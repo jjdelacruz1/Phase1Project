@@ -1,40 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Happy Hour Finder</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/2c794c18ec.js"></script>
-  <link href='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
-  <link rel="stylesheet" href="hompage.css">
-  <link rel="stylesheet" href="about.css">
-  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-</head>
-<body>
-
-  <!-- Start of homepage design -->
-  <div id="mainWrapper" class="d-flex flex-column">
+  <head>
+    <title>Happy Hour Finder</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://kit.fontawesome.com/2c794c18ec.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="hompage.css" />
+    <link rel="stylesheet" href="about.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start of homepage design -->
+    <div id="mainWrapper" class="d-flex flex-column">
       <!-- Header -->
       <div id="navigation">
-          <a href="homepage.html"><img id="logo" src="img/logo.png" height="50px"></a>
-          <form id="search-form">
-              <div class="input-group input-group-lg">
-                <input class="form-control search-bar rounded-0" id="search-bar" placeholder="City or Zip Code...">	
-                <button id="submit-btn" role="submit"><img src="img/search-icon.svg"></button>
-              </div>
-          </form>
+        <a href="homepage.html"
+          ><img id="logo" src="img/logo.png" height="50px"
+        /></a>
+        <form id="search-form">
+          <div class="input-group input-group-lg">
+            <input
+              class="form-control search-bar rounded-0"
+              id="search-bar"
+              placeholder="City or Zip Code..."
+            />
+            <button id="submit-btn" role="submit">
+              <img src="img/search-icon.svg" />
+            </button>
+          </div>
+        </form>
       </div>
-        <!-- Text -->
+      <!-- Text -->
       <div class="col-12 mainContent">
         <h1>About Us</h1>
-        <h3>Learn more about the team who created this website, how and why this project was started, and how to help out!</h3>
-        <p>We are a team of 3 students attending the DigitalCrafts Flex Program. Our team consists of Jerome Dela Cruz, Alvin Ng, and Sue Park.</p>
-        <p>The purpose of this website is to help people find GREAT happy hours in their area by searching with their zip code or their city.</p>
-        <p>The technologies that we are using to build this website are the following:</p>
+        <h3>
+          Learn more about the team who created this website, how and why this
+          project was started, and how to help out!
+        </h3>
+        <p>
+          We are a team of 3 students attending the DigitalCrafts Flex Program.
+          Our team consists of Jerome Dela Cruz, Alvin Ng, and Sue Park.
+        </p>
+        <p>
+          The purpose of this website is to help people find GREAT happy hours
+          in their area by searching with their zip code or their city.
+        </p>
+        <p>
+          The technologies that we are using to build this website are the
+          following:
+        </p>
         <ul>
           <li>HTML, CSS, & JavaScript</li>
           <li>Bootstrap 4</li>
@@ -42,11 +76,19 @@
           <li>Bideo.js</li>
           <li>Surge for Deployment</li>
         </ul>
-        <p>We also wanted to create a template that would allow others to use this code and make ANY kind of finder in their area! All you would need to do is change out "happy hour" for something like "sushi" or "pizza" and then your site would be good to go!</p>
+        <p>
+          We also wanted to create a template that would allow others to use
+          this code and make ANY kind of finder in their area! All you would
+          need to do is change out "happy hour" for something like "sushi" or
+          "pizza" and then your site would be good to go!
+        </p>
       </div>
-  </div>
-  <footer>
-      <p style="margin-bottom: 0px">2019 © Made with lots of <img id="coffee" src="img/coffee.png" height="25px"></p>
-  </footer>
-</body>
+    </div>
+    <footer>
+      <p style="margin-bottom: 0px">
+        2019 © Made with lots of
+        <img id="coffee" src="img/coffee.png" height="25px" />
+      </p>
+    </footer>
+  </body>
 </html>
