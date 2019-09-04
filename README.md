@@ -33,17 +33,19 @@ which deploys the application to Surge.
 
 ## Technologies Used
 
-- Bootstrap 4
-- Mapbox and Yelp APIs
-- HTML & CSS
-- Travis CI 
-- Bideo.js
+- HTML, CSS & JS
+- [Bootstrap 4] (https://getbootstrap.com/)
+- [Mapbox API] (https://docs.mapbox.com/api/)
+- [Yelp Fusion] (https://www.yelp.com/fusion)
+- [Travis CI] (https://travis-ci.org/)
+- [Bideo.js] (https://rishabhp.github.io/bideo.js/)
 
 ## Features
 
 - Working search feature
 - Results page that renders results from Yelp's API
 - Interactive map from Mapbox that include markers that reflect the information from the search results
+- Easter egg if you are under 21 :wink:
 
 ## Our Process
 
@@ -58,17 +60,18 @@ which deploys the application to Surge.
 - Breaking up our code into different files/modules so that they're easier to reuse as well helping to decrease the chance of merge conflicts
 - Integrating APIs that require authentication
 - Don't be afraid to refactor code!
-- Functions shouldn't be longer than 10 lines
+- Modularize functions
 
 **Challenges We Came Across**
 
 Many of the challenges we encountered pertained to the app's search feature such as:
 - Figuring out how to make the search results appear on an actual 'results' page
 - Looking into why the search wasn't working on the results page, while it works fine on the homepage
+- Assign the submit button to the user's enter key
+- 
 
 ## Our Team
 
-- Jerome Dela Cruz https://github.com/jjdelacruz1
-- Alvin Ng https://github.com/ngalvin93
-- Sue Park https://github.com/suepark09
-
+- [Jerome Dela Cruz] (https://github.com/jjdelacruz1)
+- [Alvin Ng] (https://github.com/ngalvin93)
+- [Sue Park] (https://github.com/suepark09)
