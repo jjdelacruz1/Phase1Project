@@ -4,15 +4,6 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-- [General Information & Project Goals](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#general-information--project-goals)
-- [Available Scripts](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#available-scripts)
-- [Technologies Used](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#technologies-used)
-- [Features](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#features)
-- [Our Process](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-process)
-- [Status](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#status)
-- [What We Learned & Challenges](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#what-we-learned)
-- [Team](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-team)
-
 # General Information
 
 For our phase one project, we decided to build a simple web application as a team of three, called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
