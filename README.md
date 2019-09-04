@@ -57,6 +57,8 @@ which deploys the application to Surge.
 
 - Breaking up our code into different files/modules so that they're easier to reuse as well helping to decrease the chance of merge conflicts
 - Integrating APIs that require authentication
+- Don't be afraid to refactor code!
+- Functions shouldn't be longer than 10 lines
 
 **Challenges We Came Across**
 
