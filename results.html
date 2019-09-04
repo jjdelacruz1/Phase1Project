@@ -13,7 +13,27 @@
 <link rel="stylesheet" href="results.css">
 </head>
 <body>
-    <div id="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+                <a href="homepage.html"><img id="logo" src="img/logo.png" height="50px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="form-inline my-2 my-lg-0" id="search-form">
+                            <input id="search-bar" class="form-control mr-sm-2 search-bar" type="search" placeholder="City or Zip Code..." aria-label="Search">
+                            <button id="submit-btn" type="submit" role="submit"><img src="img/search-icon.svg" height="25px"></button>
+                          </form>
+              <ul class="navbar-nav" class="nav-item">
+                <li class="nav-item active">
+                  <a class="nav-link" href="about.html">About Our Project<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>   
+            </div>
+          </nav>
+
+    <!-- old nav start -->
+    <!-- <div id="navigation">
         <a href="homepage.html"><img id="logo" src="img/logo.png" height="50px"></a>
         <form id="search-form">
                 <div class="input-group input-group-lg">
@@ -21,13 +41,20 @@
                   <button id="submit-btn" role="submit"><img src="img/search-icon.svg"></button>
                 </div>
             </form>
-    </div>
+    </div> -->
+    <!-- old nav end -->
+
     <div id="map" style="height: 400px;"></div>
         <div class="bckgrnd-img">
+<<<<<<< HEAD
+            <div id="output" class="container d-flex flex-wrap justify-content-around"></div>
+            <button id="load-more" class="btn btn-primary" style="width: 100%; display: block;">Load more</button>   
+=======
             <div id="output" class="container d-flex flex-wrap justify-content-around">
             </div>
-       
+        </div>
     
+>>>>>>> da66d2eebdebdbf431e7bab673637a6a47573b60
     <footer>
         <p style="margin-bottom: 0px">2019 © Made with lots of <img id="coffee" src="img/coffee.png" height="25px"></p>
     </footer>

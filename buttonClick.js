@@ -19,7 +19,7 @@ var button2 = document.getElementById('notok')
 //     return joke
 //   }
 // })
-button2.addEventListener('click', function () {
+button2.addEventListener('stuff', function () {
   var randomJoke = $.ajax({
     jsonp: false,
     url: "http://api.icndb.com/jokes/random",
@@ -35,13 +35,33 @@ button2.addEventListener('click', function () {
       </div>`
     }
   })
-  // wrapper.innerHTML = `<div class="d-flex justify-content-center                           align-items-center flex-column">
-  //                       <h1>You are not old enough!</h1>
-  //                       <h2>Please get older and enjoy this joke!</h2>
-  //                       <h3>Random Chuck Norris Joke:</h3>
-  //                       <p>${joke}</p>
-  //                       </div>`
   wrapper.classList.toggle('blur')
-  console.log(event)
 })
+
+function getJokeFromResponse(data) {
+  var joke = data.value.joke;
+  return joke
+}
+
+function renderJoke(joke) {
+  console.log(joke, 'this is inside the second then, chained promise')
+  wrapper.innerHTML = `<div class="d-flex justify-content-center                           align-items-center flex-column">
+      <h1>You are not old enough!</h1>
+      <h2>Please get older and enjoy this joke!</h2>
+      <h3>Random Chuck Norris Joke:</h3>
+      <p>${joke}</p>
+      </div>`
+  wrapper.classList.toggle('blur')
+}
+
+function renderUnderPage() {
+  var randomJoke = $.ajax({
+    jsonp: false,
+    url: 'http://api.icndb.com/jokes/random',
+  })
+  .then(getJokeFromResponse)
+  .then(renderJoke)
+}
+
+button2.addEventListener('click', renderUnderPage)
 
