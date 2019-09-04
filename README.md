@@ -43,15 +43,16 @@ In the project directory, you can run:
 `npm run deploy`
 in your terminal which deploys the application to Surge. 
 
-## Our Process
+## Development Process
 
-- Brainstorm of initial app concept
-- Research APIs needed to achieve two objectives: acccess a database of bars searchable by location and mapping markers
-- Read API documentation
-- Breakdown of objectives into smaller tasks
-- Division of code resposiblities
-- Daily scrum meetings to discuss progress and layout agenda
-- Debug and testing on desktop and mobile
+1. Brainstorm app concept
+2. Research APIs needed to achieve project objectives: acccess a database of bars searchable by location and mapping custom location markers
+3. Read API documentation for Mapbox, Yelp, and Chuck Norris
+4. Read library documentation for Bideo, Bootstrap and jQuery
+5. Breakdown of objectives into smaller, simpler tasks
+6. Division of code resposiblities to team members
+7. Daily scrum meetings to discuss progress and next steps
+8. Debug and testing on desktop and mobile
 
 ## What We Learned
 
