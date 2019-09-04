@@ -7,7 +7,7 @@
     "jshint": "^2.6.0"
   },
   "scripts": {
-    "test": "jshint hello.js",
+    "test": "jshint buttonClick.js",
     "deploy": "rm -rf ./dist && rsync -r ./ ./dist && cp ./dist/homepage.html ./dist/200.html && surge ./dist --domain http://happyhourfinder.surge.sh"
   }
 }
