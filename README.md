@@ -1,6 +1,6 @@
 <img src="https://github.com/jjdelacruz1/Phase1Project/blob/master/img/logo-dark.png" alt="alt text" width="400">
 
-# Project Information
+## Project Information
 
 Simple web application called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
 
@@ -14,6 +14,7 @@ Simple web application called Happy Hour Finder. The premise of the web app is t
 - Search for happy hours by city or zip
 - Browse through top happy hour results
 - Swipe through interactive map that marks the location for each result
+- Click results to learn more about the business via Yelp
 - Easter egg if you are under 21 :wink:
 
 **Languages Used**
@@ -56,9 +57,9 @@ Most of the challenges we encountered pertained to the app's search feature such
 - Saving the user's search term on one page and rendering the results on another
 - Looking into why the search wasn't working on the results page, while it works fine on the homepage
 - Assign the submit button to the user's enter key
-- Lock in 'happy hour' parameter
+- Hard code 'happy hour' parameter
 
-Customizing the Mapbox API required clever thinking:
+Customizing the Mapbox API required heavy research for implementation:
 - Returning to cleared state for map markers
 - Removing default behaviors like zooming on scroll
 - Map markers reactive to mouse hovers
