@@ -4,7 +4,7 @@
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-# General Information
+# Background
 
 Simple web application called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
 
@@ -48,6 +48,10 @@ in your terminal which deploys the application to Surge.
 - Brainstorm of initial app concept
 - Research APIs needed to achieve two objectives: acccess a database of bars searchable by location and mapping markers
 - Read API documentation
+- Breakdown of objectives into smaller tasks
+- Division of code resposiblities
+- Daily scrum meetings to discuss progress and layout agenda
+- Debug and testing on desktop and mobile
 
 ## What We Learned
 
@@ -56,21 +60,22 @@ in your terminal which deploys the application to Surge.
 - Don't be afraid to refactor code!
 - Modularize functions
 - Trello is your friend
+- Merge conflicts are not that scary
 
 **Challenges We Came Across**
 
-Many of the challenges we encountered pertained to the app's search feature such as:
+Most of the challenges we encountered pertained to the app's search feature such as:
 - Saving the user's search term on one page and rendering the results on another
 - Looking into why the search wasn't working on the results page, while it works fine on the homepage
 - Assign the submit button to the user's enter key
 - Lock in 'happy hour' parameter
 
-Mapbox:
+Customizing the Mapbox API required clever thinking:
 - Returning to cleared state for map markers
 - Removing default behaviors like zooming on scroll
 - Map markers reactive to mouse hovers
 
-Yelp:
+and the Yelp Fusion API had its fair share of problems:
 - Ignoring undefined values from JSON data
 - Offseting results to apply next/previous page
 - Pinpointing which business values we need to render
