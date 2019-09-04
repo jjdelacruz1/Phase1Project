@@ -38,11 +38,11 @@ in your terminal which deploys the application to Surge.
 | --- | --- |
 | [jQuery](https://jquery.com/) | JS library that simplifies HTML DOM tree traversal and manipulation, event handling, CSS animation, and AJAX |
 | [Bootstrap](https://getbootstrap.com/) | CSS framework template for typography, forms, buttons, navigation and other interface components |
-| [Mapbox](https://docs.mapbox.com/api/) | xxx |
+| [Mapbox](https://docs.mapbox.com/api/) | Live location |
 | [Yelp Fusion](https://www.yelp.com/fusion) | xxx |
-| [Travis CI](https://travis-ci.org/) | xxx |
-| [Bideo](https://rishabhp.github.io/bideo.js/) | xxx |
-| [Random Chuck Norris](https://api.chucknorris.io/) | xxx |
+| [Travis CI](https://travis-ci.org/) | Sync Github projects to continually test and deploy your projects |
+| [Bideo](https://rishabhp.github.io/bideo.js/) | JS library for responsive background video |
+| [Random Chuck Norris](https://api.chucknorris.io/) | API for generating random Chuck Norris jokes |
 
 ## Features
 
@@ -67,6 +67,7 @@ in your terminal which deploys the application to Surge.
 - Integrating APIs that require authentication
 - Don't be afraid to refactor code!
 - Modularize functions
+- Trello is your friend
 
 **Challenges We Came Across**
 
