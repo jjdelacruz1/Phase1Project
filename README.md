@@ -1,10 +1,6 @@
 # <img src="https://github.com/jjdelacruz1/Phase1Project/blob/master/img/logo-dark.png" alt="alt text" width="400">
 
-[![Build Status](https://travis-ci.org/jjdelacruz1/Phase1Project.svg?branch=master)](https://travis-ci.org/jjdelacruz1/Phase1Project)
-[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
-[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
-
-# Background
+# Project Information
 
 Simple web application called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
 
@@ -54,16 +50,7 @@ in your terminal which deploys the application to Surge.
 7. Daily scrum meetings to discuss progress and next steps
 8. Debug and testing on desktop and mobile
 
-## What We Learned
-
-- Breaking up our code into different files/modules so that they're easier to reuse as well helping to decrease the chance of merge conflicts
-- Integrating APIs that require authentication
-- Don't be afraid to refactor code!
-- Modularize functions
-- Trello is your friend
-- Merge conflicts are not that scary
-
-**Challenges We Came Across**
+## Challenges Encountered
 
 Most of the challenges we encountered pertained to the app's search feature such as:
 - Saving the user's search term on one page and rendering the results on another
@@ -81,8 +68,20 @@ and the Yelp Fusion API had its fair share of problems:
 - Offseting results to apply next/previous page
 - Pinpointing which business values we need to render
 
-## Our Team
+## Key Takeaways
+
+- Integrating APIs that require authentication
+- Don't be afraid to refactor code!
+- Modularize functions
+- Trello is your friend
+- Merge conflicts are not that scary
+
+## Team Members
 
 - [Jerome Dela Cruz](https://github.com/jjdelacruz1)
 - [Alvin Ng](https://github.com/ngalvin93)
 - [Sue Park](https://github.com/suepark09)
+
+[![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
+[![Build Status](https://travis-ci.org/jjdelacruz1/Phase1Project.svg?branch=master)](https://travis-ci.org/jjdelacruz1/Phase1Project)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
