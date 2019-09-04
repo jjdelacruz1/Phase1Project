@@ -13,15 +13,21 @@
 - [What We Learned & Challenges](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#what-we-learned)
 - [Team](https://github.com/jjdelacruz1/Phase1Project/blob/master/README.md#our-team)
 
-# General Information & Project Goals
+# General Information
 
 For our phase one project, we decided to build a simple web application as a team of three, called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
 
-**Project Goals**
+**Goals**
 - Integrate two remote APIs using AJAX
 - Use another JS library that is not jQuery
 - Deploy our project elsewhere besides Github pages
 - Learn how to break code into different files or modules
+
+**Features**
+- Search for happy hours by city or zip
+- Browse through top happy hour results
+- Swipe through interactive map that marks the location for each result
+- Easter egg if you are under 21 :wink:
 
 ## Available Scripts
 
@@ -43,13 +49,6 @@ in your terminal which deploys the application to Surge.
 | [Travis CI](https://travis-ci.org/) | Sync Github projects to continually test and deploy projects |
 | [Bideo](https://rishabhp.github.io/bideo.js/) | Responsive background video |
 | [Random Chuck Norris](https://api.chucknorris.io/) | Generate random Chuck Norris jokes |
-
-## Features
-
-- Search for happy hours by city or zip
-- Browse through top happy hour results
-- Swipe through interactive map that marks the location for each result
-- Easter egg if you are under 21 :wink:
 
 ## Our Process
 
