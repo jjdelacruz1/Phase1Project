@@ -33,24 +33,27 @@ which deploys the application to Surge.
 
 ## Technologies Used
 
-- HTML, CSS & JS
+- HTML, CSS & JavaScript
 - [jQuery](https://jquery.com/)
-- [Bootstrap 4](https://getbootstrap.com/)
-- [Mapbox API](https://docs.mapbox.com/api/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Mapbox](https://docs.mapbox.com/api/)
 - [Yelp Fusion](https://www.yelp.com/fusion)
 - [Travis CI](https://travis-ci.org/)
-- [Bideo.js](https://rishabhp.github.io/bideo.js/)
+- [Bideo](https://rishabhp.github.io/bideo.js/)
+- [Random Chuck Norris](https://api.chucknorris.io/)
 
 ## Features
 
-- Working search feature
-- Results page that renders results from Yelp's API
-- Interactive map from Mapbox that include markers that reflect the information from the search results
+- Search for happy hours by city or zip
+- Browse through top results
+- Interactive map that marks the location for each result
 - Easter egg if you are under 21 :wink:
 
 ## Our Process
 
-- WIP
+- Brainstorm of initial app concept
+- Research APIs needed to achieve two objectives: acccess a database of bars searchable by location and mapping markers
+- Read API documentation
 
 ## Status
 
