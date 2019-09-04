@@ -72,6 +72,7 @@ and the Yelp Fusion API had its fair share of problems:
 ## Key Takeaways
 
 - Integrating APIs that require authentication
+- Commit often and pull always
 - Don't be afraid to refactor code!
 - Modularize functions
 - Trello is your friend
