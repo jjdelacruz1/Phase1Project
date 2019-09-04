@@ -8,7 +8,38 @@
     }
     #submit-btn {
        width: 50px !important;
-   }   
+   }  
+
+   .card {
+    width: 100vw !important;
+
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .card-img {
+        height: 120px !important;
+    }
+
+    #map {
+        display: none;
+        /* position: static !important;
+        top: 1275px !important;
+        height: 20px !important; */
+    }
+
+    .card {
+        padding: 10px !important;
+        width: 45vw !important;
+        opacity: .95;
+        -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+       -moz-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+       box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
+    }
+
+}
 
 html body {
     margin: 0;
@@ -17,7 +48,7 @@ html body {
 
 #map {
     top: 70px;
-    margin-bottom: 70px;
+    position: fixed;
 }
 
 #logo {
@@ -91,6 +122,8 @@ footer {
     height: 50px;
     width: 100%; 
     margin-bottom: 0;
+    position: relative;
+    z-index: 3000;
 }
 
 #coffee {
@@ -103,22 +136,51 @@ footer {
  }
 
  .card {
-     width: 45%;
+     padding: 10px !important;
+     width: 45vw !important;
      opacity: .95;
      -webkit-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 3px 5px 5px 0px rgba(0,0,0,0.75);
  }
 
+.card-img {
+    height: 78%;
+    background-size: cover;
+    background-position: center;
+    padding-top: 10px !important;
+}
+
+ .card-body {
+     padding-left: 15px;
+ }
+
+ #card {
+     /* border: solid 1px red; */
+     height: 9%;
+     width: 98%;
+     padding:5px;
+     /* overflow: hidden; */
+ }
+
  #output {
      padding-top: 15px;
  }
+
+ .container {
+     width: 600px;
+ }
+
+
 
  a.leaflet-popup-close-button {
      display: none;
  }
 
  .bckgrnd-img {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
      background-image: url('img/results-img2.jpg');
      background-size: cover;
      background-repeat: none;

@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
       L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A'
       const viewCoordinate = response.businesses[0].coordinates
       map
-        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 12)
+        .setView([viewCoordinate.latitude, viewCoordinate.longitude], 13)
         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
       for (let i = 0; i < response.businesses.length; i++) {
         const coordinate = response.businesses[i].coordinates
