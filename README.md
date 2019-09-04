@@ -6,7 +6,7 @@
 
 # General Information
 
-For our phase one project, we decided to build a simple web application as a team of three, called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
+Simple web application called Happy Hour Finder. The premise of the web app is to help users find local happy hours by searching with either their zip code or city. Here is the link to our site: http://happyhourfinder.surge.sh
 
 **Goals**
 - Integrate two remote APIs using AJAX
@@ -20,16 +20,12 @@ For our phase one project, we decided to build a simple web application as a tea
 - Swipe through interactive map that marks the location for each result
 - Easter egg if you are under 21 :wink:
 
-## Available Scripts
+**Languages Used**
+- HTML
+- CSS
+- JavaScript
 
-In the project directory, you can run:
-`npm run deploy`
-in your terminal which deploys the application to Surge. 
-
-## Languages Used
-- HTML, CSS & JavaScript
-
-## Technologies Used
+**Technologies Used**
 
 | Name | Description |
 | --- | --- |
@@ -41,15 +37,17 @@ in your terminal which deploys the application to Surge.
 | [Bideo](https://rishabhp.github.io/bideo.js/) | Responsive background video |
 | [Random Chuck Norris](https://api.chucknorris.io/) | Generate random Chuck Norris jokes |
 
+**Available Scripts**
+
+In the project directory, you can run:
+`npm run deploy`
+in your terminal which deploys the application to Surge. 
+
 ## Our Process
 
 - Brainstorm of initial app concept
 - Research APIs needed to achieve two objectives: acccess a database of bars searchable by location and mapping markers
 - Read API documentation
-
-## Status
-
-- WIP
 
 ## What We Learned
 
