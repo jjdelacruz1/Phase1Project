@@ -34,11 +34,12 @@ which deploys the application to Surge.
 ## Technologies Used
 
 - HTML, CSS & JS
-- [Bootstrap 4] (https://getbootstrap.com/)
-- [Mapbox API] (https://docs.mapbox.com/api/)
-- [Yelp Fusion] (https://www.yelp.com/fusion)
-- [Travis CI] (https://travis-ci.org/)
-- [Bideo.js] (https://rishabhp.github.io/bideo.js/)
+- [jQuery](https://jquery.com/)
+- [Bootstrap 4](https://getbootstrap.com/)
+- [Mapbox API](https://docs.mapbox.com/api/)
+- [Yelp Fusion](https://www.yelp.com/fusion)
+- [Travis CI](https://travis-ci.org/)
+- [Bideo.js](https://rishabhp.github.io/bideo.js/)
 
 ## Features
 
@@ -72,6 +73,6 @@ Many of the challenges we encountered pertained to the app's search feature such
 
 ## Our Team
 
-- [Jerome Dela Cruz] (https://github.com/jjdelacruz1)
-- [Alvin Ng] (https://github.com/ngalvin93)
-- [Sue Park] (https://github.com/suepark09)
+- [Jerome Dela Cruz](https://github.com/jjdelacruz1)
+- [Alvin Ng](https://github.com/ngalvin93)
+- [Sue Park](https://github.com/suepark09)
