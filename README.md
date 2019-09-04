@@ -15,7 +15,7 @@ Simple web application called Happy Hour Finder. The premise of the web app is t
 - Browse through top happy hour results
 - Swipe through interactive map that marks the location for each result
 - Click results to learn more about the business via Yelp
-- Easter egg if you are under 21 :wink:
+- Find the easter egg! May be easier if you're under 21 :wink:
 
 **Languages Used**
 - HTML
@@ -76,6 +76,7 @@ and the Yelp Fusion API had its fair share of problems:
 - Modularize functions
 - Trello is your friend
 - Merge conflicts are not that scary
+- As this was our first project, this app was optimized for the "happy trail" user
 
 ## Team Members
 
