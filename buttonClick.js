@@ -1,4 +1,4 @@
-/*jshint esversion: 6 */
+/* jshint esversion: 6 */
 
 var wrapper = document.getElementById("mainWrapper");
 var button = document.getElementById("ok");

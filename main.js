@@ -1,31 +1,31 @@
-(function() {
-  var bv = new Bideo();
+(function () {
+  var bv = new Bideo()
   bv.init({
     // Video element
-    videoEl: document.querySelector("#background_video"),
+    videoEl: document.querySelector('#background_video'),
 
     // Container element
-    container: document.querySelector("body"),
+    container: document.querySelector('body'),
 
     // Resize
     resize: true,
 
     // autoplay: false,
 
-    isMobile: window.matchMedia("(max-width: 768px)").matches,
+    isMobile: window.matchMedia('(max-width: 768px)').matches,
 
-    playButton: document.querySelector("#play"),
-    pauseButton: document.querySelector("#pause"),
+    playButton: document.querySelector('#play'),
+    pauseButton: document.querySelector('#pause'),
 
     // Array of objects containing the src and type
     // of different video formats to add
     src: [
       {
-        src: "http://www.anstudio.co/wp-content/uploads/2019/08/Beer-24916.mp4",
-        type: "video/mp4"
+        src: 'http://www.anstudio.co/wp-content/uploads/2019/08/Beer-24916.mp4',
+        type: 'video/mp4'
       },
       {
-        src: "night.webm",
+        src: 'night.webm',
         type: 'video/webm;codecs="vp8, vorbis"'
       }
     ]
@@ -34,5 +34,5 @@
     // onLoad: function () {
     //   document.querySelector('#video_cover').style.display = 'none';
     // }
-  });
-})();
+  })
+})()
