@@ -1,3 +1,5 @@
+/* jshint esversion: 6 */
+
 var wrapper = document.getElementById("mainWrapper");
 var button = document.getElementById("ok");
 
@@ -7,37 +9,21 @@ button.addEventListener("click", function() {
 
 var button2 = document.getElementById("notok");
 
-button2.addEventListener("stuff", function() {
-  var randomJoke = $.ajax({
-    jsonp: false,
-    url: "http://api.icndb.com/jokes/random",
-    success: function(data) {
-      var joke = data.value.joke;
-      // console.log(data)
-      console.log(joke);
-      wrapper.innerHTML = `<div class="d-flex justify-content-center                           align-items-center flex-column">
-      <h1>You are not old enough!</h1>
-      <h2>Please get older and enjoy this joke!</h2>
-      <h3>Random Chuck Norris Joke:</h3>
-      <p>${joke}</p>
-      </div>`;
-    }
-  });
-  wrapper.classList.toggle("blur");
-});
-
 function getJokeFromResponse(data) {
   var joke = data.value.joke;
   return joke;
 }
 
 function renderJoke(joke) {
-  console.log(joke, "this is inside the second then, chained promise");
-  wrapper.innerHTML = `<div class="d-flex justify-content-center align-items-center flex-column">
+  wrapper.innerHTML = `<div class="d-flex justify-content-center align-items-center flex-column" style="height: 87vh;">
       <h1>You are not old enough!</h1>
       <h2>Please get older and enjoy this joke!</h2>
+      <br>
       <h3>Random Chuck Norris Joke:</h3>
-      <p>${joke}</p>
+      <br>
+      <h3 style="text-align: center;">${joke}</h3>
+      <br>
+      <img src="/img/chucknorris_logo_coloured_small@2x.png" style="height: 15rem;">
       </div>`;
   wrapper.classList.toggle("blur");
 }

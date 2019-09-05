@@ -44,27 +44,27 @@ function createYelpResultsHtml(yelpSearchResults) {
     function renderStarRating() {
       let starRating = "";
       if (singleBusiness.rating === 5) {
-        starRating = '<img src="img/regular_5.png">';
+        starRating = '<img src="img/regular_5.png">'
       } else if (singleBusiness.rating === 4.5) {
-        starRating = '<img src="img/regular_4_half.png">';
+        starRating = '<img src="img/regular_4_half.png">'
       } else if (singleBusiness.rating === 4) {
-        starRating = '<img src="img/regular_4.png">';
+        starRating = '<img src="img/regular_4.png">'
       } else if (singleBusiness.rating === 3.5) {
-        starRating = '<img src="img/regular_3_half.png">';
+        starRating = '<img src="img/regular_3_half.png">'
       } else if (singleBusiness.rating === 3) {
-        starRating = '<img src="img/regular_3.png">';
+        starRating = '<img src="img/regular_3.png">'
       } else if (singleBusiness.rating === 2.5) {
-        starRating = '<img src="img/regular_2_half.png">';
+        starRating = '<img src="img/regular_2_half.png">'
       } else if (singleBusiness.rating === 2) {
-        starRating = '<img src="img/regular_2.png">';
+        starRating = '<img src="img/regular_2.png">'
       } else if (singleBusiness.rating === 1.5) {
-        starRating = '<img src="img/regular_1_half.png">';
+        starRating = '<img src="img/regular_1_half.png">'
       } else if (singleBusiness.rating === 1) {
-        starRating = '<img src="img/regular_1.png">';
+        starRating = '<img src="img/regular_1.png">'
       } else {
-        starRating = '<img src="img/regular_0.png">';
+        starRating = '<img src="img/regular_0.png">'
       }
-      return starRating;
+      return starRating
     }
     function renderPriceRange() {
       let priceRange = "";
@@ -75,9 +75,9 @@ function createYelpResultsHtml(yelpSearchResults) {
       } else if (singleBusiness.price === "$$") {
         priceRange = '<span class="badge badge-pill badge-success">$$</span>';
       } else {
-        priceRange = '<span class="badge badge-pill badge-success">$</span>';
+        priceRange = '<span class="badge badge-pill badge-success">$</span>'
       }
-      return priceRange;
+      return priceRange
     }
     return `          
         <div id='card' class='card mb-3'>
@@ -92,15 +92,15 @@ function createYelpResultsHtml(yelpSearchResults) {
                         }"><h5 class='card-title'>${singleBusiness.name}</h5></a>
                         <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews XXX</p>
                         <p>${singleBusiness.location.display_address.join(
-                          "<br>"
+                          '<br>'
                         )}
                     </div>
                 </div>
             </div>
         </div>
-        `;
-  });
-  return businessHtml.join("");
+        `
+  })
+  return businessHtml.join('')
 }
 
 function insertHtmlIntoContainer (yelpSearchResults) {
