@@ -127,7 +127,6 @@ function createYelpResultsHtml (yelpSearchResults) {
                         <p>${
                           singleBusiness.location.display_address[0]
                         }<br>${singleBusiness.location.display_address[1]}</p>
-                        <p>More nonsense</p>
                     </div>
                 </div>
             </div>
