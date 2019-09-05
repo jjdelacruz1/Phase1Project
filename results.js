@@ -33,30 +33,32 @@ document.addEventListener('DOMContentLoaded', function () {
   $.ajax(yelpAjaxRequest)
     .then(function (response) {
       output.innerHTML = ''
-      L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A'
+
       const viewCoordinate = response.businesses[0].coordinates
       map
         .setView([viewCoordinate.latitude, viewCoordinate.longitude], 13)
         .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
-      for (let i = 0; i < response.businesses.length; i++) {
-        const coordinate = response.businesses[i].coordinates
-        const singleBusiness = response.businesses[i]
-        const marker = L.marker([coordinate.latitude, coordinate.longitude],
-          { title: singleBusiness.name}).addTo(map)
-          .bindPopup(`
-                            <div class="img"><img src="${singleBusiness.image_url}" height="50px"></div>
-                            <h4>${singleBusiness.name}</h4>
-                            ${singleBusiness.location.display_address.join('<br>')}         
-                        `)
-                        marker.on('mouseover', function (e) {
-                          this.openPopup();
-                        });
-                        marker.on('mouseout', function (e) {
-                          this.closePopup();
-                        });
-        markersArray.push(marker);
-        map.scrollWheelZoom.disable()
-      } 
+
+
+      // for (let i = 0; i < response.businesses.length; i++) {
+      //   const coordinate = response.businesses[i].coordinates
+      //   const singleBusiness = response.businesses[i]
+      //   const marker = L.marker([coordinate.latitude, coordinate.longitude],
+      //     { title: singleBusiness.name}).addTo(map)
+      //     .bindPopup(`
+      //                       <div class="img"><img src="${singleBusiness.image_url}" height="50px"></div>
+      //                       <h4>${singleBusiness.name}</h4>
+      //                       ${singleBusiness.location.display_address.join('<br>')}         
+      //                   `)
+      //                   marker.on('mouseover', function (e) {
+      //                     this.openPopup();
+      //                   });
+      //                   marker.on('mouseout', function (e) {
+      //                     this.closePopup();
+      //                   });
+      //   markersArray.push(marker);
+      //   map.scrollWheelZoom.disable()
+      // } 
 
      
 
