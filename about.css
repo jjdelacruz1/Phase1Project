@@ -1,36 +1,36 @@
 #logo {
-    padding-right: 40px;
-    padding-left: 10px;
+  padding-right: 40px;
+  padding-left: 10px;
 }
 
 #navigation {
-    position: fixed;
-    z-index: 2000;
-    background-color: #262626;
-    height: 70px;
-    width: 100%; 
-    padding: 10px 0 10px 10px;
-    text-align: left;
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+  position: fixed;
+  z-index: 2000;
+  background-color: #262626;
+  height: 70px;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  text-align: left;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #search-form {
-    width: 60%;
-    border: none;
+  width: 60%;
+  border: none;
 }
 
 #submit-btn {
-    background-color: #f9c00b;
-    color: white;
-    border: none;
-    width: 70px;
+  background-color: #f9c00b;
+  color: white;
+  border: none;
+  width: 70px;
 }
 
 .form-control {
-    border: 0;
+  border: 0;
 }
 
 .mainContent {
@@ -39,24 +39,25 @@
 }
 
 footer {
-    padding-top:12px;
-    text-align: center;
-    color: white;
-    background-color: #262626;
-    height: 50px;
-    width: 100%; 
-    margin-bottom: 0;
+  padding-top: 12px;
+  text-align: center;
+  color: white;
+  background-color: #262626;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 #coffee {
-    padding-bottom: 4px;
+  padding-bottom: 4px;
 }
 
-.btn:focus,.btn:active {
-    outline: none !important;
-    box-shadow: none;
- }
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none;
+}
 
- a.leaflet-popup-close-button {
-     display: none;
- }
+a.leaflet-popup-close-button {
+  display: none;
+}
