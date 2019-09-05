@@ -4,6 +4,7 @@
   "author": "your name here :-)",
   "version": "0.0.1",
   "devDependencies": {
+    "eslint": "^6.3.0",
     "jshint": "^2.6.0"
   },
   "scripts": {
