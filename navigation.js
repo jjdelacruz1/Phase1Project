@@ -1,6 +1,5 @@
 // let ajaxResponse = null
 // const searchTerm = 'happy hour'
-//console.log('fuuuuuuuuu')
 // let location = ''
 
 // const map = L.mapbox.map('map')
@@ -29,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         L.mapbox.accessToken = 'pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A'
         const viewCoordinate = response.businesses[0].coordinates
         map
-          .setView([viewCoordinate.latitude, viewCoordinate.longitude], 12)
+          .setView([viewCoordinate.latitude, viewCoordinate.longitude], 13)
           .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
 
 
@@ -110,7 +109,7 @@ function createYelpResultsHtml (yelpSearchResults) {
         <div id='card' class='card mb-3'>
             <div class="row no-gutters">
                 <div class="col-md-3">
-                    <a href="${singleBusiness.url}"><img class='business-img card-img rounded' src='${singleBusiness.image_url}'></a>
+                    <a href="${singleBusiness.url}"><div class='business-img card-img rounded' style="background-image: url(${singleBusiness.image_url})"></div></a>
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
