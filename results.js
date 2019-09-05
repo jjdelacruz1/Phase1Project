@@ -1,7 +1,7 @@
 let ajaxResponse = null;
 const searchTerm = "happy hour";
 // let location = ''
-
+// test
 const map = L.mapbox.map("map");
 
 let markersArray = [];

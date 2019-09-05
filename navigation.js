@@ -90,7 +90,7 @@ function createYelpResultsHtml(yelpSearchResults) {
                         <a href="${
                           singleBusiness.url
                         }"><h5 class='card-title'>${singleBusiness.name}</h5></a>
-                        <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews XXX</p>
+                        <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews</p>
                         <p>${singleBusiness.location.display_address.join(
                           "<br>"
                         )}
@@ -116,3 +116,5 @@ document.getElementById("search-form").addEventListener("submit", function(e) {
   yelpAjax()
     .then(insertHtmlIntoContainer);
 });
+
+// test
