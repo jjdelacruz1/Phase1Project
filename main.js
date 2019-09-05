@@ -1,6 +1,5 @@
 (function () {
-
-  var bv = new Bideo();
+  var bv = new Bideo()
   bv.init({
     // Video element
     videoEl: document.querySelector('#background_video'),
@@ -29,11 +28,11 @@
         src: 'night.webm',
         type: 'video/webm;codecs="vp8, vorbis"'
       }
-    ],
+    ]
 
     // What to do once video loads (initial frame)
     // onLoad: function () {
     //   document.querySelector('#video_cover').style.display = 'none';
     // }
-  });
-}());
+  })
+})()
