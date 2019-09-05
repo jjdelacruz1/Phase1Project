@@ -1,3 +1,14 @@
+function yelpAjax () {
+  var location = document.getElementById("search-bar").value;
+  const yelpApiKey = "Bearer fpfUJj8DFp_jm-n0LNi5U4WL9AgyD3G2ieoAPAYccY2QUi-1ZCXSuHoa0uEaPY60BInSS_COQHHlqWp0VeKDOcgdPBHn9lYSC1_r6mJCI3y8aU63IHNfK6Lhr3xhXXYx";
+  const corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
+  var yelpAjaxInfo = {
+    url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&limit=10`,
+    headers: { Authorization: `${yelpApiKey}` }
+  };
+  return $.ajax(yelpAjaxInfo)
+}
+
 function placeMapboxMarkers (yelpSearchResults) {
   L.mapbox.accessToken =
     "pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A";
@@ -30,7 +41,6 @@ function placeMapboxMarkers (yelpSearchResults) {
 
 function createYelpResultsHtml(yelpSearchResults) {
   const businessHtml = yelpSearchResults.map(function(singleBusiness) {
-    // Renders out the star rating based on number rating from json data
     function renderStarRating() {
       let starRating = "";
       if (singleBusiness.rating === 5) {
@@ -56,7 +66,6 @@ function createYelpResultsHtml(yelpSearchResults) {
       }
       return starRating;
     }
-    // Renders out the dollar signs for price range
     function renderPriceRange() {
       let priceRange = "";
       if (singleBusiness.price === "$$$$") {
@@ -70,7 +79,6 @@ function createYelpResultsHtml(yelpSearchResults) {
       }
       return priceRange;
     }
-    // Returns the html for each business
     return `          
         <div id='card' class='card mb-3'>
             <div class="row no-gutters">
@@ -95,33 +103,16 @@ function createYelpResultsHtml(yelpSearchResults) {
   return businessHtml.join("");
 }
 
-function yelpAjax () {
-  var location = document.getElementById("search-bar").value;
-  const yelpApiKey = "Bearer fpfUJj8DFp_jm-n0LNi5U4WL9AgyD3G2ieoAPAYccY2QUi-1ZCXSuHoa0uEaPY60BInSS_COQHHlqWp0VeKDOcgdPBHn9lYSC1_r6mJCI3y8aU63IHNfK6Lhr3xhXXYx";
-  const corsAnywhereUrl = "https://cors-anywhere.herokuapp.com/";
-  var yelpAjaxInfo = {
-    url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&limit=10`,
-    headers: { Authorization: `${yelpApiKey}` }
-  };
-  return $.ajax(yelpAjaxInfo)
-}
-
-function insertHtmlIntoContainer (response) {
+function insertHtmlIntoContainer (yelpSearchResults) {
   const bodyContainer = document.getElementById("output");
   bodyContainer.innerHTML = "";
-  placeMapboxMarkers(response)
-  ajaxResponse = response.businesses;
+  placeMapboxMarkers(yelpSearchResults)
+  ajaxResponse = yelpSearchResults.businesses;
   bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
 }
 
 document.getElementById("search-form").addEventListener("submit", function(e) {
   e.preventDefault();
   yelpAjax()
-  .then(function(response) {
-    const bodyContainer = document.getElementById("output");
-    bodyContainer.innerHTML = "";
-    placeMapboxMarkers(response)
-    ajaxResponse = response.businesses;
-    bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
-  });
+    .then(insertHtmlIntoContainer);
 });
