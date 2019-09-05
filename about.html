@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -51,39 +52,87 @@
         </form>
       </div>
       <!-- Text -->
-      <div class="col-12 mainContent">
-        <h1>About Us</h1>
-        <h3>
-          Learn more about the team who created this website, how and why this
-          project was started, and how to help out!
-        </h3>
-        <p>
-          We are a team of 3 students attending the DigitalCrafts Flex Program.
-          Our team consists of Jerome Dela Cruz, Alvin Ng, and Sue Park.
-        </p>
-        <p>
-          The purpose of this website is to help people find GREAT happy hours
-          in their area by searching with their zip code or their city.
-        </p>
-        <p>
-          The technologies that we are using to build this website are the
-          following:
-        </p>
-        <ul>
-          <li>HTML, CSS, & JavaScript</li>
-          <li>Bootstrap 4</li>
-          <li>Yelp and MapBox APIs</li>
-          <li>Bideo.js</li>
-          <li>Surge for Deployment</li>
-        </ul>
-        <p>
-          We also wanted to create a template that would allow others to use
-          this code and make ANY kind of finder in their area! All you would
-          need to do is change out "happy hour" for something like "sushi" or
-          "pizza" and then your site would be good to go!
-        </p>
+      <div class="jumbotron placeholder jumbotron-fluid">
+        <div class="container container-header">
+          <h1 class="display-4"><span style="color:#f9c00b">ABOUT</span> OUR PROJECT</h1>
+        </div>
+    </div>
+     <!-- end of jumbotron -->
+
+     <div class="container-fluid">
+        <h3>Who We Are</h3>
+        <div class="row whoweare-row">      
+          <div class="col-md about-text">
+            <h5>Team & Project Details</h5>
+              <p>We are a team of 3 students attending the DigitalCrafts Flex Program.
+                  Our team consists of Jerome Dela Cruz, Alvin Ng, and Sue Park.
+                  Together, we created a web app that helps users find local happy hours
+                    in their area by searching with their zip code or their city.</p>
+                  <button id="github-btn" class="btn"><a href="https://github.com/jjdelacruz1/Phase1Project">View Project Github</a></button>
+          </div>
+          <div class="col-md img-block">
+            <img src="img/digitalcrafts-site-logo.png" height="130px">
+          </div>
+        </div>
+        <div class="row tech-title"> <h3>Technologies Used</h3></div>
+       
+        <div class="row technologies-row">      
+            <div class="col-md technologies">
+                <img id="icon" src="img/coding.png" height="50px">
+                <h6>Front-End Tools</h6>
+                <p>Some front-end technologies that were used in technologies
+                  project includes HTML, CSS, JavaScript, jQuery, Bootstrap 4, and Bideo.js 
+                </p>
+            </div>
+            <div class="col-md">
+                <img  id="icon" src="img/api.png" height="50px">
+                <h6>External APIs</h6>
+                <p>We also used two external APIs which are Yelp and Mapbox.</p>
+            </div>
+            <div class="col-md">
+                <img id="icon" src="img/deployment.png" height="50px">
+                <h6>Deployment</h6>
+                <p>The project was deployed using Surge, due to its ease of use.</p>
+            </div>
+          </div>
+
+      </div>
+
+     <!-- <div class="container section">
+        <h3>A bit about ourselves</h3>
+      <div class="row">
+          
+        <div class="col-md-6 about-title-box">
+         <p>pooop</p>
+        </div>
+        <div class="col-md-6 about-description-box">
+            <p>We are a team of 3 students attending the DigitalCrafts Flex Program.
+                Our team consists of Jerome Dela Cruz, Alvin Ng, and Sue Park.
+                The purpose of this website is to help people find GREAT happy hours
+                in their area by searching with their zip code or their city.</p>
+        </div>
       </div>
     </div>
+
+    <div class="section">
+        <div class="row">
+            <h3>Technologies Used</h3>
+            <div class="col-md-6 about-title-box">
+             <p>poop</p>
+            </div>
+            <div class="col-md-6 about-description-box">
+                <ul>
+                    <li>HTML, CSS, & JavaScript</li>
+                    <li>Bootstrap 4</li>
+                    <li>Yelp and MapBox APIs</li>
+                    <li>Bideo.js</li>
+                    <li>Surge for Deployment</li>
+                  </ul>
+            </div>
+          </div>
+    </div>
+     -->
+
     <footer>
       <p style="margin-bottom: 0px">
         2019 © Made with lots of
