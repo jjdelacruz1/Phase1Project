@@ -29,8 +29,6 @@ function placeMapboxMarkers (yelpSearchResults) {
 }
 
 function createYelpResultsHtml(yelpSearchResults) {
-  //console.log('begin yelp func')
-  console.log(yelpSearchResults);
   const businessHtml = yelpSearchResults.map(function(singleBusiness) {
     // Renders out the star rating based on number rating from json data
     function renderStarRating() {
@@ -108,16 +106,22 @@ function yelpAjax () {
   return $.ajax(yelpAjaxInfo)
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("search-form").addEventListener("submit", function(e) {
-      e.preventDefault();
-      yelpAjax()
-      .then(function(response) {
-        const bodyContainer = document.getElementById("output");
-        bodyContainer.innerHTML = "";
-        placeMapboxMarkers(response)
-        ajaxResponse = response.businesses;
-        bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
-      });
-    });
+function insertHtmlIntoContainer (response) {
+  const bodyContainer = document.getElementById("output");
+  bodyContainer.innerHTML = "";
+  placeMapboxMarkers(response)
+  ajaxResponse = response.businesses;
+  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
+}
+
+document.getElementById("search-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+  yelpAjax()
+  .then(function(response) {
+    const bodyContainer = document.getElementById("output");
+    bodyContainer.innerHTML = "";
+    placeMapboxMarkers(response)
+    ajaxResponse = response.businesses;
+    bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
+  });
 });
