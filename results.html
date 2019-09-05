@@ -1,36 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>H-Town Happy Hour</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css' rel='stylesheet' />
-<link rel="stylesheet" href="results.css">
-</head>
-<body>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-                <a href="homepage.html"><img id="logo" src="img/logo.png" height="50px"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <form class="form-inline my-2 my-lg-0" id="search-form">
-                            <input id="search-bar" class="form-control mr-sm-2 search-bar" type="search" placeholder="City or Zip Code..." aria-label="Search">
-                            <button id="submit-btn" type="submit" role="submit"><img src="img/search-icon.svg" height="25px"></button>
-                          </form>
-              <ul class="navbar-nav" class="nav-item">
-                <li class="nav-item active">
-                  <a class="nav-link" href="about.html">About Our Project<span class="sr-only">(current)</span></a>
-                </li>
-              </ul>   
-            </div>
-          </nav>
+  <head>
+    <title>H-Town Happy Hour</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox.js/v3.2.0/mapbox.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="results.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <a href="homepage.html"
+        ><img id="logo" src="img/logo.png" height="50px"
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0" id="search-form">
+          <input
+            id="search-bar"
+            class="form-control mr-sm-2 search-bar"
+            type="search"
+            placeholder="City or Zip Code..."
+            aria-label="Search"
+          />
+          <button id="submit-btn" type="submit" role="submit">
+            <img src="img/search-icon.svg" height="25px" />
+          </button>
+        </form>
+        <ul class="navbar-nav" class="nav-item">
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html"
+              >About Our Project<span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- old nav start -->
     <!-- <div id="navigation">
@@ -44,7 +76,6 @@
     </div> -->
     <!-- old nav end -->
 
-    
         <div class="bckgrnd-img">
             <div id="output" class="container" style="margin-left: 20px; padding-top: 85px;" >
             </div>
@@ -52,9 +83,12 @@
         </div>
     
     <footer>
-        <p style="margin-bottom: 0px">2019 © Made with lots of <img id="coffee" src="img/coffee.png" height="25px"></p>
+      <p style="margin-bottom: 0px">
+        2019 © Made with lots of
+        <img id="coffee" src="img/coffee.png" height="25px" />
+      </p>
     </footer>
     <script src="results.js"></script>
     <script src="navigation.js"></script>
-</body>
+  </body>
 </html>
