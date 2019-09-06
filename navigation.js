@@ -39,6 +39,14 @@ function placeMapboxMarkers (yelpSearchResults) {
   }
 }
 
+function deleteMarkers() {
+  if (markersArray.length !== 0) {
+    markersArray.forEach(function(marker) {
+      marker.remove();
+    });
+  }
+}
+
 function createYelpResultsHtml(yelpSearchResults) {
   const businessHtml = yelpSearchResults.map(function(singleBusiness) {
     function renderStarRating() {
