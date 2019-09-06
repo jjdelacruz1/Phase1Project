@@ -7,15 +7,22 @@ button.addEventListener('click', function () {
 
 var button2 = document.getElementById('notok')
 
+function getJokeFromResponse(data) {
+  var joke = data.value.joke;
+  return joke;
+}
+
 function renderJoke (joke) {
   console.log(joke, 'this is inside the second then, chained promise')
   wrapper.innerHTML = `<div class="d-flex justify-content-center align-items-center flex-column">
       <h1>You are not old enough!</h1>
       <h2>Please get older and enjoy this joke!</h2>
       <h3>Random Chuck Norris Joke:</h3>
-      <p>${joke}</p>
-      </div>`
-  wrapper.classList.toggle('blur')
+      <h3>${joke}</h3>
+      <br>
+      <img src=url('img/chucknorris_logo_coloured_small@2x.png')>
+      </div>`;
+  wrapper.classList.toggle("blur");
 }
 
 function renderUnderPage () {
