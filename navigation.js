@@ -109,11 +109,11 @@ function createYelpResultsHtml (yelpSearchResults) {
 }
 
 function insertHtmlIntoContainer (yelpSearchResults) {
-  const bodyContainer = document.getElementById('output')
-  bodyContainer.innerHTML = ''
-  placeMapboxMarkers(yelpSearchResults)
-  ajaxResponse = yelpSearchResults.businesses
-  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
+  const bodyContainer = document.getElementById('output');
+  bodyContainer.innerHTML = '';
+  placeMapboxMarkers(yelpSearchResults);
+  let ajaxResponse = yelpSearchResults.businesses;
+  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
 }
 
 document.getElementById('search-form').addEventListener('submit', function (e) {
