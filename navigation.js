@@ -41,6 +41,7 @@ function placeMapboxMarkers (yelpSearchResults) {
 
 function createYelpResultsHtml(yelpSearchResults) {
   const businessHtml = yelpSearchResults.map(function(singleBusiness) {
+
     function renderStarRating() {
       let starRating = "";
       if (singleBusiness.rating === 5) {
@@ -66,6 +67,7 @@ function createYelpResultsHtml(yelpSearchResults) {
       }
       return starRating;
     }
+    
     function renderPriceRange() {
       let priceRange = "";
       if (singleBusiness.price === "$$$$") {
@@ -90,9 +92,11 @@ function createYelpResultsHtml(yelpSearchResults) {
                         <a href="${
                           singleBusiness.url
                         }"><h5 class='card-title'>${singleBusiness.name}</h5></a>
-                        <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews XXX</p>
+
+                        <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews</p>
                         <p>${singleBusiness.location.display_address.join(
                           "<br>"
+
                         )}
                     </div>
                 </div>
@@ -116,3 +120,4 @@ document.getElementById("search-form").addEventListener("submit", function(e) {
   yelpAjax()
     .then(insertHtmlIntoContainer);
 });
+
