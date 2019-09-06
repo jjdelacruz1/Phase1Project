@@ -4,15 +4,12 @@ const map = L.mapbox.map("map");
 let markersArray = [];
 
 document.addEventListener("DOMContentLoaded", function() {
-  const output = document.getElementById("output");
   const location = sessionStorage.getItem("location");
   var yelpAjaxRequest = {
     url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&limit=10`,
     headers: { Authorization: `${yelpApiKey}` }
   };
-
   deleteMarkers()
-
   $.ajax(yelpAjaxRequest)
     .then(insertHtmlIntoContainer);
 });
