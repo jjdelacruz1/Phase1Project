@@ -10,7 +10,7 @@ function yelpAjax () {
 function placeMapboxMarkers (yelpSearchResults) {
   const viewCoordinate = yelpSearchResults.businesses[0].coordinates
   map
-    .setView([viewCoordinate.latitude, viewCoordinate.longitude], 13)
+    .setView([viewCoordinate.latitude, viewCoordinate.longitude], 12)
     .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
 
   for (let i = 0; i < yelpSearchResults.businesses.length; i++) {
@@ -95,7 +95,7 @@ function createYelpResultsHtml (yelpSearchResults) {
                         <a href="${
                           singleBusiness.url
                         }"><h5 class='card-title'>${singleBusiness.name}</h5></a>
-                        <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews XXX</p>
+                        <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews</p>
                         <p>${singleBusiness.location.display_address.join(
                           '<br>'
                         )}
@@ -109,11 +109,11 @@ function createYelpResultsHtml (yelpSearchResults) {
 }
 
 function insertHtmlIntoContainer (yelpSearchResults) {
-  const bodyContainer = document.getElementById('output')
-  bodyContainer.innerHTML = ''
-  placeMapboxMarkers(yelpSearchResults)
-  ajaxResponse = yelpSearchResults.businesses
-  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
+  const bodyContainer = document.getElementById('output');
+  bodyContainer.innerHTML = '';
+  placeMapboxMarkers(yelpSearchResults);
+  let ajaxResponse = yelpSearchResults.businesses;
+  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
 }
 
 document.getElementById('search-form').addEventListener('submit', function (e) {

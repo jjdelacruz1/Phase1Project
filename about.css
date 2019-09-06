@@ -73,6 +73,7 @@ h1 {
 .nav-item {
   margin-right: 20px;
   margin-left: 20px;
+  /* border: solid red 1px; */
 }
 
 .navbar-collapse {
@@ -80,7 +81,7 @@ h1 {
 }
 
 a:hover {
-  color: #f9c00b !important;
+  color: white !important;
 }
 
 #navbarSupportedContent {
