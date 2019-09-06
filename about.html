@@ -36,23 +36,32 @@
     <!-- Start of homepage design -->
     <div id="mainWrapper" class="d-flex flex-column">
       <!-- Header -->
-      <div id="navigation">
-        <a href="homepage.html"
-          ><img id="logo" src="img/logo.png" height="50px"
-        /></a>
-        <form id="search-form">
-          <div class="input-group input-group-lg">
-            <input
-              class="form-control search-bar rounded-0"
-              id="search-bar"
-              placeholder="City or Zip Code..."
-            />
-            <button id="submit-btn" role="submit">
-              <img src="img/search-icon.svg" />
-            </button>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+          <a href="homepage.html"
+            ><img id="logo" src="img/logo.png" height="50px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav" class="nav-item">
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"
+                  >About Our Project<span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
           </div>
-        </form>
-      </div>
+        </nav>
       <!-- Text -->
       <div class="jumbotron placeholder jumbotron-fluid">
         <div class="container container-header">
