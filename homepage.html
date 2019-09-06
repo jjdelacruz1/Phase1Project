@@ -36,36 +36,40 @@
     <link rel="stylesheet" href="hompage.css" />
     <link rel="stylesheet" href="results.css" />
     <link rel="stylesheet" href="bideo.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="modal fade" id="myModal" data-backdrop="static">
       <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
         <div class="modal-content d-flex flex-row">
-          <div class="col-7">
-            <img
-              src="img/yutacar-JKMnm3CIncw-unsplash.jpg"
-              alt="Drinking"
-              class="img-thumbnail"
-            />
+          <div class="col-7 img-container">
+            <h1 class="modal-title">HAPPY HOUR FINDER</h1>
+            <p class="modal-description">Search through hundreds of restaurants and bars for the best happy hour spots in your area! 
+            </p>
           </div>
           <div class="rightSide d-flex flex-column col-5 mx-auto">
             <div
               class="modal-header d-flex justify-content-center align-items-center"
             >
-              <h4 class="modal-title">Age Verification</h4>
+              <h4 class="age-title">AGE VERIFICATION</h4>
             </div>
             <div
               class="modal-body d-flex justify-content-center align-items-center"
             >
-              Please verify if you are over 21!
+              Please verify if you are over 21
+             
             </div>
-            <div
-              class="modal-footer flex-row d-flex justify-content-center align-items-center"
-            >
+            <!-- <div
+              class="modal-footer align-items-center"
+            > -->
+            <button
+            type="button"
+            class="btn btn-secondary mx-auto nothanks"
+            id="ok"
+            data-dismiss="modal"
+          >
+            I am over 21!
+          </button>
               <button
                 type="button"
                 class="btn btn-secondary mx-auto nothanks decline"
@@ -74,15 +78,8 @@
               >
                 I am under 21
               </button>
-              <button
-                type="button"
-                class="btn btn-secondary mx-auto nothanks"
-                id="ok"
-                data-dismiss="modal"
-              >
-                I am over 21!
-              </button>
-            </div>
+             
+            <!-- </div> -->
           </div>
         </div>
       </div>
@@ -129,6 +126,7 @@
         <!-- Search bar -->
         <div id="homepage-search" class="row">
           <!-- Text -->
+        
           <div class="col-12">
             <h1 id="primary-text">It's about that time of day.</h1>
             <p id="secondary-text">Explore the best bars around your area.</p>
@@ -149,8 +147,10 @@
             </form>
           </div>
         </div>
+        
         <!-- Background video -->
         <div id="bideo">
+          
           <video id="background-video" autoplay muted loop>
             <source
               src="http://www.anstudio.co/wp-content/uploads/2019/08/Beer-24916.mp4"
