@@ -1,18 +1,18 @@
-let ajaxResponse = null;
-const searchTerm = "happy hour";
-const map = L.mapbox.map("map");
-let markersArray = [];
+const ajaxResponse = null
+const searchTerm = 'happy hour'
+const map = L.mapbox.map('map')
+const markersArray = []
 
-document.addEventListener("DOMContentLoaded", function() {
-  const location = sessionStorage.getItem("location");
+document.addEventListener('DOMContentLoaded', function () {
+  const location = sessionStorage.getItem('location')
   var yelpAjaxRequest = {
     url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&limit=10`,
     headers: { Authorization: `${yelpApiKey}` }
-  };
+  }
   deleteMarkers()
   $.ajax(yelpAjaxRequest)
-    .then(insertHtmlIntoContainer);
-});
+    .then(insertHtmlIntoContainer)
+})
 
 // // Start of load more results function (loads 10 at a time)
 // const loadButton = document.getElementById("load-more");
