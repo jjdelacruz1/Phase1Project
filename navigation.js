@@ -8,12 +8,13 @@ function yelpAjax () {
 }
 
 function placeMapboxMarkers (yelpSearchResults) {
-  L.mapbox.accessToken =
-    "pk.eyJ1Ijoic3VlcGFyazA5IiwiYSI6ImNqenJmdGxoNzBqengzbW8zeDlmNnhudHEifQ.NvYx9iu9NUGdvDdYdWNg-A";
+ 
   const viewCoordinate = yelpSearchResults.businesses[0].coordinates;
   map
     .setView([viewCoordinate.latitude, viewCoordinate.longitude], 13)
     .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
+
+
   for (let i = 0; i < yelpSearchResults.businesses.length; i++) {
     const coordinate = yelpSearchResults.businesses[i].coordinates;
     const singleBusiness = yelpSearchResults.businesses[i];

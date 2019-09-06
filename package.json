@@ -3,11 +3,14 @@
   "description": "Simple Travis-CI check for JSHint (Code Linting)",
   "author": "your name here :-)",
   "version": "0.0.1",
-  "devDependencies": {
-    "jshint": "^2.6.0"
-  },
   "scripts": {
-    "test": "jshint buttonClick.js",
+    "test": "npx standard",
     "deploy": "rm -rf ./dist && rsync -r ./ ./dist && cp ./dist/homepage.html ./dist/200.html && surge ./dist --domain http://happyhourfinder.surge.sh"
+  },
+  "devDependencies": {
+    "standard": "13.1.0"
+  },
+  "standard": {
+    "globals": [ "$", "L", "sessionStorage", "ajaxResponse", "map", "searchTerm", "randomJoke" ]
   }
 }
