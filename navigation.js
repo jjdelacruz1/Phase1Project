@@ -1,23 +1,21 @@
 function yelpAjax () {
-  var location = document.getElementById("search-bar").value;
+  var location = document.getElementById('search-bar').value
   var yelpAjaxInfo = {
     url: `${corsAnywhereUrl}https://api.yelp.com/v3/businesses/search?term=${searchTerm}&location=${location}&limit=10`,
     headers: { Authorization: `${yelpApiKey}` }
-  };
+  }
   return $.ajax(yelpAjaxInfo)
 }
 
 function placeMapboxMarkers (yelpSearchResults) {
- 
-  const viewCoordinate = yelpSearchResults.businesses[0].coordinates;
+  const viewCoordinate = yelpSearchResults.businesses[0].coordinates
   map
     .setView([viewCoordinate.latitude, viewCoordinate.longitude], 13)
     .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/light-v10'))
 
-
   for (let i = 0; i < yelpSearchResults.businesses.length; i++) {
-    const coordinate = yelpSearchResults.businesses[i].coordinates;
-    const singleBusiness = yelpSearchResults.businesses[i];
+    const coordinate = yelpSearchResults.businesses[i].coordinates
+    const singleBusiness = yelpSearchResults.businesses[i]
     const marker = L.marker([coordinate.latitude, coordinate.longitude], {
       title: singleBusiness.name
     }).addTo(map).bindPopup(`
@@ -26,65 +24,65 @@ function placeMapboxMarkers (yelpSearchResults) {
                       }" height="50px"></div>
                       <h4>${singleBusiness.name}</h4>
                       ${singleBusiness.location.display_address.join(
-                        "<br>"
+                        '<br>'
                       )}         
-                  `);
-    marker.on("mouseover", function(e) {
-      this.openPopup();
-    });
-    marker.on("mouseout", function(e) {
-      this.closePopup();
-    });
+                  `)
+    marker.on('mouseover', function (e) {
+      this.openPopup()
+    })
+    marker.on('mouseout', function (e) {
+      this.closePopup()
+    })
   }
 }
 
-function deleteMarkers() {
+function deleteMarkers () {
   if (markersArray.length !== 0) {
-    markersArray.forEach(function(marker) {
-      marker.remove();
-    });
+    markersArray.forEach(function (marker) {
+      marker.remove()
+    })
   }
 }
 
-function createYelpResultsHtml(yelpSearchResults) {
-  const businessHtml = yelpSearchResults.map(function(singleBusiness) {
-    function renderStarRating() {
-      let starRating = "";
+function createYelpResultsHtml (yelpSearchResults) {
+  const businessHtml = yelpSearchResults.map(function (singleBusiness) {
+    function renderStarRating () {
+      let starRating = ''
       if (singleBusiness.rating === 5) {
-        starRating = '<img src="img/regular_5.png">';
+        starRating = '<img src="img/regular_5.png">'
       } else if (singleBusiness.rating === 4.5) {
-        starRating = '<img src="img/regular_4_half.png">';
+        starRating = '<img src="img/regular_4_half.png">'
       } else if (singleBusiness.rating === 4) {
-        starRating = '<img src="img/regular_4.png">';
+        starRating = '<img src="img/regular_4.png">'
       } else if (singleBusiness.rating === 3.5) {
-        starRating = '<img src="img/regular_3_half.png">';
+        starRating = '<img src="img/regular_3_half.png">'
       } else if (singleBusiness.rating === 3) {
-        starRating = '<img src="img/regular_3.png">';
+        starRating = '<img src="img/regular_3.png">'
       } else if (singleBusiness.rating === 2.5) {
-        starRating = '<img src="img/regular_2_half.png">';
+        starRating = '<img src="img/regular_2_half.png">'
       } else if (singleBusiness.rating === 2) {
-        starRating = '<img src="img/regular_2.png">';
+        starRating = '<img src="img/regular_2.png">'
       } else if (singleBusiness.rating === 1.5) {
-        starRating = '<img src="img/regular_1_half.png">';
+        starRating = '<img src="img/regular_1_half.png">'
       } else if (singleBusiness.rating === 1) {
-        starRating = '<img src="img/regular_1.png">';
+        starRating = '<img src="img/regular_1.png">'
       } else {
-        starRating = '<img src="img/regular_0.png">';
+        starRating = '<img src="img/regular_0.png">'
       }
-      return starRating;
+      return starRating
     }
-    function renderPriceRange() {
-      let priceRange = "";
-      if (singleBusiness.price === "$$$$") {
-        priceRange = '<span class="badge badge-pill badge-success">$$$$</span>';
-      } else if (singleBusiness.price === "$$$") {
-        priceRange = '<span class="badge badge-pill badge-success">$$$</span>';
-      } else if (singleBusiness.price === "$$") {
-        priceRange = '<span class="badge badge-pill badge-success">$$</span>';
+    function renderPriceRange () {
+      let priceRange = ''
+      if (singleBusiness.price === '$$$$') {
+        priceRange = '<span class="badge badge-pill badge-success">$$$$</span>'
+      } else if (singleBusiness.price === '$$$') {
+        priceRange = '<span class="badge badge-pill badge-success">$$$</span>'
+      } else if (singleBusiness.price === '$$') {
+        priceRange = '<span class="badge badge-pill badge-success">$$</span>'
       } else {
-        priceRange = '<span class="badge badge-pill badge-success">$</span>';
+        priceRange = '<span class="badge badge-pill badge-success">$</span>'
       }
-      return priceRange;
+      return priceRange
     }
     return `          
         <div id='card' class='card mb-3'>
@@ -99,27 +97,27 @@ function createYelpResultsHtml(yelpSearchResults) {
                         }"><h5 class='card-title'>${singleBusiness.name}</h5></a>
                         <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews XXX</p>
                         <p>${singleBusiness.location.display_address.join(
-                          "<br>"
+                          '<br>'
                         )}
                     </div>
                 </div>
             </div>
         </div>
-        `;
-  });
-  return businessHtml.join("");
+        `
+  })
+  return businessHtml.join('')
 }
 
 function insertHtmlIntoContainer (yelpSearchResults) {
-  const bodyContainer = document.getElementById("output");
-  bodyContainer.innerHTML = "";
+  const bodyContainer = document.getElementById('output')
+  bodyContainer.innerHTML = ''
   placeMapboxMarkers(yelpSearchResults)
-  ajaxResponse = yelpSearchResults.businesses;
-  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
+  ajaxResponse = yelpSearchResults.businesses
+  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
 }
 
-document.getElementById("search-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+document.getElementById('search-form').addEventListener('submit', function (e) {
+  e.preventDefault()
   yelpAjax()
-    .then(insertHtmlIntoContainer);
-});
+    .then(insertHtmlIntoContainer)
+})
