@@ -18,7 +18,7 @@ function renderJoke(joke) {
       <h1>You are not old enough!</h1>
       <h2>Please get older and enjoy this joke!</h2>
       <h3>Random Chuck Norris Joke:</h3>
-      <p>${joke}</p>
+      <h3>${joke}</h3>
       </div>`;
   wrapper.classList.toggle("blur");
 }
