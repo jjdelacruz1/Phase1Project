@@ -124,7 +124,7 @@ body {
   flex-direction: column;
   font-family: 'Nunito Sans', sans-serif !important;
   color: white;
-  background-image: url('img/yutacar-JKMnm3CIncw-unsplash.jpg');
+  background-image: url('/img/yutacar-JKMnm3CIncw-unsplash.jpg');
   background-size: cover;
   background-position: center;
   /* background-blend-mode: multiply; */
@@ -158,7 +158,7 @@ body {
   color: white;
   width: 100vw;
   height: 100vh;
-  background-image: url(img/results-img2.jpg);
+  background-image: url('/img/results-img2.jpg');
   background-size: cover;
   background-position: center;
 }
