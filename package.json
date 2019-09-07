@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "npm standard",
+    "test": "standard",
     "deploy": "rm -rf ./dist && rsync -r ./ ./dist && cp ./dist/homepage.html ./dist/200.html && surge ./dist --domain http://happyhourfinder.surge.sh"
   },
   "devDependencies": {
