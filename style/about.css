@@ -118,7 +118,7 @@ a:hover {
   height: 40vh;
   margin-top: 70px;
   text-align: center !important;
-  background-image: url(img/results-img2.jpg);
+  background-image: url('/img/results-img2.jpg');
   background-size: cover;
   background-position: center;
 }
