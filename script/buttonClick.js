@@ -21,9 +21,8 @@ function renderJoke (joke) {
       <h1 class="joke-title">YOU ARE NOT OLD ENOUGH!</h1>
       <h2 class="joke-subheading">Please get older and enjoy this random Chuck Norris joke <img src="img/sunglasses.png" height="32px"></h2>
       <h3 class="joke-container">"${joke}"</h3>
-      </div>`;
-  wrapper.classList.toggle("blur");
-
+      </div>`
+  wrapper.classList.toggle('blur')
 }
 
 function renderUnderPage () {

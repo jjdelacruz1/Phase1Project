@@ -1,10 +1,6 @@
 {
-  "name": "learn-travis-YOURNAME",
-  "description": "Simple Travis-CI check for JSHint (Code Linting)",
-  "author": "your name here :-)",
-  "version": "0.0.1",
   "scripts": {
-    "test": "npx standard",
+    "test": "standard",
     "deploy": "rm -rf ./dist && rsync -r ./ ./dist && cp ./dist/homepage.html ./dist/200.html && surge ./dist --domain http://happyhourfinder.surge.sh"
   },
   "devDependencies": {

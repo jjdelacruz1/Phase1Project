@@ -35,12 +35,9 @@ function placeMapboxMarkers (yelpSearchResults) {
     marker.on('mouseout', function (e) {
       this.closePopup()
     })
-    map.scrollWheelZoom.disable();
+    map.scrollWheelZoom.disable()
   }
 }
-
-
-
 
 function deleteMarkers () {
   if (markersArray.length !== 0) {
