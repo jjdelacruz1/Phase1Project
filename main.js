@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 (function () {
   var bv = new Bideo()
   bv.init({

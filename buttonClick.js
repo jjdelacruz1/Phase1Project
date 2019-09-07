@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 var wrapper = document.getElementById('mainWrapper')
 var button = document.getElementById('ok')
 
@@ -7,9 +9,9 @@ button.addEventListener('click', function () {
 
 var button2 = document.getElementById('notok')
 
-function getJokeFromResponse(data) {
-  var joke = data.value.joke;
-  return joke;
+function getJokeFromResponse (data) {
+  var joke = data.value.joke
+  return joke
 }
 
 function renderJoke (joke) {
@@ -21,8 +23,8 @@ function renderJoke (joke) {
       <h3>${joke}</h3>
       <br>
       <img src=url('img/chucknorris_logo_coloured_small@2x.png')>
-      </div>`;
-  wrapper.classList.toggle("blur");
+      </div>`
+  wrapper.classList.toggle('blur')
 }
 
 function renderUnderPage () {

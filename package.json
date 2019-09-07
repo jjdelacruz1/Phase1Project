@@ -11,6 +11,6 @@
     "standard": "13.1.0"
   },
   "standard": {
-    "globals": [ "$", "L", "sessionStorage", "ajaxResponse", "map", "searchTerm", "randomJoke" ]
+    "globals": [ "$", "L", "sessionStorage", "ajaxResponse", "map", "searchTerm", "Bideo", "markersArray", "deleteMarkers", "insertHtmlIntoContainer", "yelpApiKey", "corsAnywhereUrl", "map", "new_height"]
   }
 }

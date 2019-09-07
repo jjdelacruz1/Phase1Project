@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 function yelpAjax () {
   var location = document.getElementById('search-bar').value
   var yelpAjaxInfo = {
@@ -20,12 +22,12 @@ function placeMapboxMarkers (yelpSearchResults) {
       title: singleBusiness.name
     }).addTo(map).bindPopup(`
                       <div class="img"><img src="${
-                        singleBusiness.image_url
-                      }" height="50px"></div>
+  singleBusiness.image_url
+}" height="50px"></div>
                       <h4>${singleBusiness.name}</h4>
                       ${singleBusiness.location.display_address.join(
-                        '<br>'
-                      )}         
+    '<br>'
+  )}         
                   `)
     marker.on('mouseover', function (e) {
       this.openPopup()
@@ -93,12 +95,12 @@ function createYelpResultsHtml (yelpSearchResults) {
                 <div class="col-md-8">
                     <div class="card-body">
                         <a href="${
-                          singleBusiness.url
-                        }"><h5 class='card-title'>${singleBusiness.name}</h5></a>
+  singleBusiness.url
+}"><h5 class='card-title'>${singleBusiness.name}</h5></a>
                         <p id='price-review'>${renderPriceRange()} • ${renderStarRating()} • ${singleBusiness.review_count} reviews</p>
                         <p>${singleBusiness.location.display_address.join(
-                          '<br>'
-                        )}
+    '<br>'
+  )}
                     </div>
                 </div>
             </div>
@@ -109,11 +111,11 @@ function createYelpResultsHtml (yelpSearchResults) {
 }
 
 function insertHtmlIntoContainer (yelpSearchResults) {
-  const bodyContainer = document.getElementById('output');
-  bodyContainer.innerHTML = '';
-  placeMapboxMarkers(yelpSearchResults);
-  let ajaxResponse = yelpSearchResults.businesses;
-  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse);
+  const bodyContainer = document.getElementById('output')
+  bodyContainer.innerHTML = ''
+  placeMapboxMarkers(yelpSearchResults)
+  const ajaxResponse = yelpSearchResults.businesses
+  bodyContainer.innerHTML = createYelpResultsHtml(ajaxResponse)
 }
 
 document.getElementById('search-form').addEventListener('submit', function (e) {
