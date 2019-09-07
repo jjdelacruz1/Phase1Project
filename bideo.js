@@ -78,7 +78,7 @@
 
         // Set all the attribute key=val supplied in `src` option
         for (key in srcOb) {
-          if (srcOb.hasOwnProperty(key)) {
+          if (srcOb(key)) {
             val = srcOb[key]
 
             source.setAttribute(key, val)
@@ -184,8 +184,8 @@
         var new_width = minW
         var new_height = Math.ceil(new_width / videoRatio)
       } else {
-        var new_height = minH
-        var new_width = Math.ceil(new_height * videoRatio)
+        new_height = minH
+        new_width = Math.ceil(new_height * videoRatio)
       }
 
       this.videoEl.style.width = new_width + 'px'
