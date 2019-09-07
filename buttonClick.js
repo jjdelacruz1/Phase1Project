@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 var wrapper = document.getElementById('mainWrapper')
 var button = document.getElementById('ok')
 
@@ -7,9 +9,9 @@ button.addEventListener('click', function () {
 
 var button2 = document.getElementById('notok')
 
-function getJokeFromResponse(data) {
-  var joke = data.value.joke;
-  return joke;
+function getJokeFromResponse (data) {
+  var joke = data.value.joke
+  return joke
 }
 
 function renderJoke (joke) {
@@ -21,6 +23,7 @@ function renderJoke (joke) {
       <h3 class="joke-container">"${joke}"</h3>
       </div>`;
   wrapper.classList.toggle("blur");
+
 }
 
 function renderUnderPage () {

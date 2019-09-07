@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+
 const ajaxResponse = null
 const searchTerm = 'happy hour'
 const map = L.mapbox.map('map')
