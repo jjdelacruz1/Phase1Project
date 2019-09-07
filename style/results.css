@@ -181,7 +181,7 @@ footer {
      display: flex;
      flex-wrap: wrap;
      flex-direction: row;
-     background-image: url('img/results-img2.jpg');
+     background-image: url('/img/results-img2.jpg');
      background-size: cover;
      background-repeat: none;
      background-attachment: fixed;
