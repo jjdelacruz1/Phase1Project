@@ -14,13 +14,11 @@ function getJokeFromResponse(data) {
 
 function renderJoke (joke) {
   console.log(joke, 'this is inside the second then, chained promise')
-  wrapper.innerHTML = `<div class="d-flex justify-content-center align-items-center flex-column">
-      <h1>You are not old enough!</h1>
-      <h2>Please get older and enjoy this joke!</h2>
-      <h3>Random Chuck Norris Joke:</h3>
-      <h3>${joke}</h3>
-      <br>
-      <img src=url('img/chucknorris_logo_coloured_small@2x.png')>
+  wrapper.innerHTML = `<div class="chucknorris-container d-flex justify-content-center align-items-center flex-column">
+  <img src='img/chucknorris-logo.png' height="150px;">
+      <h1 class="joke-title">YOU ARE NOT OLD ENOUGH!</h1>
+      <h2 class="joke-subheading">Please get older and enjoy this random Chuck Norris joke <img src="img/sunglasses.png" height="32px"></h2>
+      <h3 class="joke-container">"${joke}"</h3>
       </div>`;
   wrapper.classList.toggle("blur");
 }
