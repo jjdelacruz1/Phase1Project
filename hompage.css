@@ -151,8 +151,31 @@ body {
   border: none;
 }
 
-/* .modal-body {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-} */
+/* chuck norris CSS */
+.chucknorris-container {
+  padding: 5px 40px 20px 40px;
+  text-align: center;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(img/results-img2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.joke-title {
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-size: 5vw;
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.joke-subheading {
+  font-size: 2.2vw;
+}
+
+
+.joke-container {
+  padding-top: 30px;
+  font-size: 3.2vw;
+}
