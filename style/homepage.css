@@ -1,0 +1,158 @@
+html,
+body {
+  /* max-width: 100%;
+    overflow-x: hidden; */
+  box-sizing: border-box;
+}
+
+#background-vdeo {
+  position: relative;
+  z-index: 2;
+}
+
+.barContainer {
+  /* color: red;
+    background-color: aquamarine; */
+  padding: 20px;
+  width: 65vw;
+}
+
+.test {
+  /* position:-webkit-sticky; 
+    position:sticky; 
+    top:0; */
+  width: 28vw;
+  left: 66%;
+  top: 0;
+  /* height: 100%; */
+  padding: 15px;
+}
+
+/* .test {
+    position:-webkit-sticky; 
+    position:sticky; 
+    top:0;
+} */
+
+#map {
+  width: 340px;
+  height: 300px;
+}
+
+.search-container {
+  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+}
+
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  padding: 20px;
+}
+
+#search-form {
+  width: 60%;
+  border: none;
+  height: 50px !important;
+}
+
+#search-icon {
+  padding-top: 10px;
+}
+
+#primary-text {
+  font-size: 3.2em !important;
+}
+
+#secondary-text {
+  font-size: 1.4em !important;
+}
+
+.btn-primary {
+  background-color: #f9c00b;
+  color: white;
+  border-radius: 0;
+  border: none;
+  width: 70px;
+  padding-top: 16px;
+}
+
+.blur {
+  filter: blur(13px);
+}
+
+.business-img {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  padding: 8px;
+}
+
+/* modal styling */
+
+.modal-title {
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 800;
+  line-height: 35pt;
+  font-size: 2.8em;
+  padding-bottom: 3px;
+}
+
+.age-title {
+  font-family: 'Nunito Sans', sans-serif !important;
+  font-weight: 800;
+  line-height: 32pt;
+  font-size: 180%;
+  text-align: center;
+}
+.modal-content {
+  height: 62vh !important;
+  border-radius: 0 !important;
+}
+
+.modal-description {
+  font-size: 13pt;
+}
+
+.img-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Nunito Sans', sans-serif !important;
+  color: white;
+  background-image: url('/img/yutacar-JKMnm3CIncw-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  /* background-blend-mode: multiply; */
+  padding: 20px;
+}
+
+.rightSide {
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#notok {
+  border-radius: 0;
+  width: 100%;
+  margin: 5px;
+}
+
+#ok {
+  margin: 5px;
+  width: 100%;
+  border-radius: 0;
+  background-color: #f9c00b;
+  border: none;
+}
+
+/* .modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+} */
