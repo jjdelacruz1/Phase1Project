@@ -41,8 +41,10 @@ Simple web application called Happy Hour Finder. The premise of the web app is t
 **Available Scripts**
 
 In the project directory, you can run:
-`npm run deploy`
-in your terminal which deploys the application to Surge. 
+
+### Install Node Modules folder
+`npm install` 
+
 
 ## Development Process
 
